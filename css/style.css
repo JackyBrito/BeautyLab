@@ -37,8 +37,8 @@ h2.text-center::after {
 }
 
 .hero-section {
-    /* Reemplaza esta URL con la de tu propia imagen */
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://via.placeholder.com/1920x1080.png?text=Imagen+de+Fondo') no-repeat center center;
+    /* Ahora usa una imagen local para mayor fiabilidad y rapidez */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/hero-background..jpeg') no-repeat center center;
     background-size: cover;
     height: 80vh; /* Altura del 80% de la ventana */
     position: relative;
