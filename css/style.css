@@ -1,0 +1,133 @@
+/* 1. Paleta de colores y fuentes */
+:root {
+    --color-dark: #212529; /* Gris oscuro casi negro */
+    --color-light: #f8f9fa; /* Blanco suave */
+    --color-accent: #D4AF37; /* Tono dorado metálico */
+    --color-soft-pink: #E1C4C4; /* Rosa empolvado sutil */
+    --font-primary: 'Playfair Display', serif;
+    --font-secondary: 'Roboto', sans-serif;
+}
+
+body {
+    font-family: var(--font-secondary);
+    background-color: var(--color-light); /* Fondo principal claro */
+    color: var(--color-dark);
+}
+
+h1, h2, h3, h4, h5, h6, .navbar-brand {
+    font-family: var(--font-primary);
+}
+
+/* 2. Estilos para secciones específicas */
+
+/* Título de sección con acento dorado (Alineado a la izquierda por defecto) */
+h2::after {
+    content: '';
+    display: block;
+    width: 130px;
+    height: 3px;
+    background-color: var(--color-accent);
+    margin-top: 10px;
+}
+
+/* Centra la línea SOLO si el h2 tiene la clase text-center */
+h2.text-center::after {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-section {
+    /* Reemplaza esta URL con la de tu propia imagen */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://via.placeholder.com/1920x1080.png?text=Imagen+de+Fondo') no-repeat center center;
+    background-size: cover;
+    height: 80vh; /* Altura del 80% de la ventana */
+    position: relative;
+}
+
+.hero-section .btn-outline-light:hover {
+    background-color: var(--color-accent);
+    border-color: var(--color-accent);
+    color: var(--color-dark);
+}
+
+/* Barra de navegación oscura */
+.navbar {
+    background-color: var(--color-dark) !important;
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+    color: var(--color-light) !important;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-link.active,
+.navbar .nav-link:hover,
+.navbar .navbar-brand:hover {
+    color: var(--color-accent) !important;
+}
+
+/* Icono de hamburguesa para menú móvil (blanco) */
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(248, 249, 250, 0.85)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Sección de servicios con fondo oscuro */
+#servicios {
+    background-color: var(--color-dark);
+}
+
+/* Aseguramos que el título en la sección oscura sea visible */
+#servicios h2 {
+    color: var(--color-light);
+}
+
+.card {
+    background-color: #343a40; /* Un gris ligeramente más claro que el fondo */
+    color: var(--color-light);
+    border: 1px solid #444;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Efecto sutil al pasar el mouse */
+    border-color: var(--color-accent);
+}
+
+footer a:hover {
+    color: var(--color-accent) !important;
+}
+
+/* 3. Estilos para el Formulario de Agendar Cita */
+#agendar-cita form {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    border: 1px solid #ddd;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--color-accent);
+    box-shadow: 0 0 0 0.25rem rgba(212, 175, 55, 0.25); /* Dorado con opacidad */
+}
+
+.btn-submit {
+    background-color: var(--color-dark);
+    color: var(--color-light);
+    border: 2px solid var(--color-dark);
+    padding: 0.75rem 1.5rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: var(--color-accent);
+    color: var(--color-dark);
+    border-color: var(--color-accent);
+}
+
+.google-form iframe {
+    max-width: 100%; /* Ensures the form doesn't overflow on smaller screens */
+}
