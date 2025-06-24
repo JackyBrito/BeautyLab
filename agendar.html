@@ -45,10 +45,28 @@
                         <a class="nav-link" href="index.html#galeria">Galería</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="index.html#testimonios">Testimonios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#faq">Preguntas</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="index.html#contacto">Contacto</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="agendar.html">Agendar Cita</a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-outline-light d-flex align-items-center px-3 py-1" href="book.html" lang="en" hreflang="en" aria-label="Switch to English version" style="font-weight:500; border-radius: 2rem; background:rgba(255,255,255,0.08);">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" focusable="false" style="margin-right:6px;">
+                              <circle cx="12" cy="12" r="10" stroke="#0d6efd" stroke-width="2" fill="none"/>
+                              <ellipse cx="12" cy="12" rx="7" ry="10" stroke="#0d6efd" stroke-width="1.5" fill="none"/>
+                              <ellipse cx="12" cy="12" rx="10" ry="4" stroke="#0d6efd" stroke-width="1.5" fill="none"/>
+                              <path d="M2 12h20" stroke="#0d6efd" stroke-width="1.5"/>
+                              <path d="M12 2v20" stroke="#0d6efd" stroke-width="1.5"/>
+                            </svg>
+                            EN
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -62,10 +80,11 @@
                 <h2 class="text-center mb-5">Agendar Cita</h2>
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
-                        <p class="text-center lead mb-4">Haz clic en el botón para ver mi disponibilidad en tiempo real y reservar tu cita de forma segura a través de Microsoft Bookings.</p>
-                        <!-- Link to Microsoft Bookings Page -->
+                        <p class="text-center lead mb-4">Reserva tu cita de maquillaje profesional de forma rápida y segura. Selecciona la fecha y hora que más te convenga:</p>
+                        <!-- Calendly Inline Embed -->
+                        <div class="calendly-inline-widget mb-4" data-url="https://calendly.com/tuusuario/servicio" style="min-width:320px;height:650px;"></div>
                         <div class="text-center">
-                            <a href="https://outlook.office365.com/owa/calendar/TuEmpresa@dominio.com/bookings/" class="btn btn-submit" target="_blank" rel="noopener noreferrer">Agendar Cita</a>
+                            <a href="https://calendly.com/tuusuario/servicio" class="btn btn-submit" target="_blank" rel="noopener noreferrer">Abrir Calendly en otra pestaña</a>
                         </div>
                     </div>
                 </div>
@@ -74,19 +93,15 @@
 
     </main>
 
-    <!-- 6. Footer (el mismo que en index.html) -->
-    <footer class="bg-dark text-white text-center py-4">
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
         <div class="container">
-            <p>Beauty Lab &copy; 2025. Todos los derechos reservados.</p>
-            <p>
-                <a href="https://www.instagram.com/beautylab_mx_" class="text-white" target="_blank" rel="noopener noreferrer">Instagram</a> | 
-                <a href="https://www.facebook.com/jaqueeliinee.briito/" class="text-white" target="_blank" rel="noopener noreferrer">Facebook</a> | 
-                <a href="mailto:jacky.brito97@gmail.com" class="text-white">Email</a>
-            </p>
+            <p class="mb-0">Beauty Lab &copy; 2025. Todos los derechos reservados.</p>
         </div>
     </footer>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
 </body>
 </html>

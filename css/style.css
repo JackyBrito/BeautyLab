@@ -129,3 +129,10 @@ footer .text-white:hover {
     color: var(--color-accent); /* Eliminamos !important */
     text-decoration: none; /* Opcional: para quitar el subrayado al pasar el mouse */
 }
+
+/* Quitar acento dorado solo a los h2 de preguntas frecuentes */
+#faq .accordion-header h2::after,
+#faq .accordion-header::after {
+    display: none !important;
+    content: none !important;
+}

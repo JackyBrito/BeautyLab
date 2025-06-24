@@ -5,8 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beauty Lab - Maquilladora Profesional</title>
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Servicios de maquillaje profesional en [Tu Ciudad]. Especialista en maquillaje para novias, eventos sociales y clases de automaquillaje. ¡Agenda tu cita y realza tu belleza!">
+    <meta name="description" content="Servicios de maquillaje profesional en Ciudad de México. Especialista en maquillaje para novias, eventos sociales y clases de automaquillaje. ¡Agenda tu cita y realza tu belleza!">
     <meta name="keywords" content="maquilladora, maquillaje profesional, novias, bodas, eventos, automaquillaje, beauty lab">
+    <meta name="robots" content="index, follow">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Jacky Brito",
+      "jobTitle": "Maquilladora Profesional",
+      "image": "https://www.tu-dominio.com/images/profile-photo.jpeg",
+      "url": "https://www.tu-dominio.com/",
+      "sameAs": [
+        "https://www.instagram.com/beautylab_mx_",
+        "https://www.facebook.com/jaqueeliinee.briito/"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Ciudad de México",
+        "addressCountry": "MX"
+      },
+      "description": "Servicios de maquillaje profesional para novias, eventos sociales y clases de automaquillaje."
+    }
+    </script>
 
     <!-- Open Graph Meta Tags (para compartir en redes sociales) -->
     <meta property="og:title" content="Beauty Lab - Maquilladora Profesional">
@@ -24,20 +45,57 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- AOS Animation CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/profile-photo.jpeg">
 </head>
 <body data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-offset="70">
 
+    <!-- Botón flotante de WhatsApp -->
+    <a href="https://wa.me/5212299783211?text=Hola%20Jacky%2C%20quiero%20agendar%20una%20cita%20de%20maquillaje" class="whatsapp-float" target="_blank" aria-label="Chatea por WhatsApp" data-bs-toggle="tooltip" data-bs-placement="left" title="¡Chatea ahora!">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="WhatsApp" style="width:56px;height:56px;">
+    </a>
+    <style>
+    .whatsapp-float {
+        position: fixed;
+        width: 56px;
+        height: 56px;
+        bottom: 24px;
+        right: 24px;
+        z-index: 9999;
+        background: #25d366;
+        border-radius: 50%;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: box-shadow 0.3s;
+    }
+    .whatsapp-float:hover {
+        box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+    }
+    .whatsapp-float img {
+        filter: invert(1) brightness(2);
+    }
+    </style>
+
     <!-- 1. Barra de Navegación -->
-    <nav class="navbar navbar-expand-lg navbar-dark sticky-top bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top bg-dark" id="mainNavbar" role="navigation" aria-label="Barra de navegación principal">
         <div class="container">
-            <a class="navbar-brand" href="index.html">Beauty Lab</a>
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <svg class="navbar-brand-logo" viewBox="0 0 32 32" fill="none" aria-hidden="true" focusable="false">
+                    <circle cx="16" cy="16" r="15" stroke="#0d6efd" stroke-width="2" fill="#fff"/>
+                    <text x="16" y="21" text-anchor="middle" font-size="14" font-family='Playfair Display, serif' fill="#0d6efd">JB</text>
+                </svg>
+                Beauty Lab
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav"> <!-- ID usado por ScrollSpy -->
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#sobre-mi">Sobre Mí</a>
+                        <a class="nav-link" href="#sobre-mi">Sobre Mí</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#servicios">Servicios</a>
@@ -49,10 +107,25 @@
                         <a class="nav-link" href="#testimonios">Testimonios</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="#faq">Preguntas</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#contacto">Contacto</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="agendar.html">Agendar Cita</a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-outline-light d-flex align-items-center px-3 py-1" href="index-en.html" lang="en" hreflang="en" aria-label="Switch to English version" style="font-weight:500; border-radius: 2rem; background:rgba(255,255,255,0.08);">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" focusable="false" style="margin-right:6px;">
+                              <circle cx="12" cy="12" r="10" stroke="#0d6efd" stroke-width="2" fill="none"/>
+                              <ellipse cx="12" cy="12" rx="7" ry="10" stroke="#0d6efd" stroke-width="1.5" fill="none"/>
+                              <ellipse cx="12" cy="12" rx="10" ry="4" stroke="#0d6efd" stroke-width="1.5" fill="none"/>
+                              <path d="M2 12h20" stroke="#0d6efd" stroke-width="1.5"/>
+                              <path d="M12 2v20" stroke="#0d6efd" stroke-width="1.5"/>
+                            </svg>
+                            EN
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -61,7 +134,7 @@
 
     <main>
         <!-- 2. Hero Section -->
-        <section class="hero-section text-white text-center d-flex align-items-center">
+        <section class="hero-section text-white text-center d-flex align-items-center" data-aos="fade-up">
             <div class="container">
                 <h1 class="display-3">Realza tu belleza natural</h1>
                 <p class="lead">Servicios de maquillaje profesional para bodas, eventos y más.</p>
@@ -70,7 +143,7 @@
         </section>
 
         <!-- 3. Sobre Mí -->
-        <section id="sobre-mi" class="py-5">
+        <section id="sobre-mi" class="py-5" data-aos="fade-up">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-6 mb-4 mb-lg-0">
@@ -86,14 +159,14 @@
         </section>
 
         <!-- 4. Servicios -->
-        <section id="servicios" class="py-5">
+        <section id="servicios" class="py-5" data-aos="fade-up">
             <div class="container">
                 <h2 class="text-center mb-5">Servicios</h2>
                 <div class="row">
                     <!-- Servicio 1 -->
                     <div class="col-md-6 col-lg-4 mb-4">
                         <div class="card h-100 text-center">
-                            <img src="images/service-social.jpeg" class="card-img-top" alt="Maquillaje Social">
+                            <img src="images/service-social.jpeg" class="card-img-top" alt="Maquillaje Social" loading="lazy">
                             <div class="card-body">
                                 <h3 class="card-title">Maquillaje Social</h3>
                                 <p class="card-text">Perfecto para fiestas, graduaciones o cualquier evento donde quieras lucir radiante.</p>
@@ -103,7 +176,7 @@
                     <!-- Servicio 2 -->
                     <div class="col-md-6 col-lg-4 mb-4">
                         <div class="card h-100 text-center">
-                            <img src="images/service-bride.jpeg" class="card-img-top" alt="Maquillaje para Novias">
+                            <img src="images/service-bride.jpeg" class="card-img-top" alt="Maquillaje para Novias" loading="lazy">
                             <div class="card-body">
                                 <h3 class="card-title">Maquillaje para Novias</h3>
                                 <p class="card-text">Un servicio completo y personalizado para que brilles en tu gran día.</p>
@@ -113,7 +186,7 @@
                     <!-- Servicio 3 -->
                     <div class="col-md-6 col-lg-4 mb-4">
                         <div class="card h-100 text-center">
-                            <img src="images/service-class.png" class="card-img-top" alt="Clases de Automaquillaje">
+                            <img src="images/service-class.png" class="card-img-top" alt="Clases de Automaquillaje" loading="lazy">
                             <div class="card-body">
                                 <h3 class="card-title">Clases de Automaquillaje</h3>
                                 <p class="card-text">Aprende a maquillarte como una profesional y saca el máximo partido a tus rasgos.</p>
@@ -124,41 +197,148 @@
             </div>
         </section>
 
+        <!-- Sección de Precios -->
+        <section id="precios" class="py-5 bg-light" data-aos="fade-up">
+          <div class="container">
+            <h2 class="text-center mb-5">Precios</h2>
+            <div class="row justify-content-center">
+              <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card h-100 border-primary">
+                  <div class="card-body text-center">
+                    <h3 class="card-title">Maquillaje Social</h3>
+                    <p class="card-text">Desde <strong>$1,200 MXN (~$70 USD)</strong></p>
+                    <ul class="list-unstyled mb-3">
+                      <li>Preparación de piel profesional</li>
+                      <li>Maquillaje personalizado</li>
+                      <li>Pestañas postizas incluidas</li>
+                    </ul>
+                    <a href="agendar.html" class="btn btn-outline-primary">Agendar</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card h-100 border-success">
+                  <div class="card-body text-center">
+                    <h3 class="card-title">Novias</h3>
+                    <p class="card-text">Paquete desde <strong>$4,000 MXN (~$235 USD)</strong></p>
+                    <ul class="list-unstyled mb-3">
+                      <li>Prueba de maquillaje</li>
+                      <li>Maquillaje el día del evento</li>
+                      <li>Pestañas postizas premium</li>
+                      <li>Retoque final</li>
+                    </ul>
+                    <a href="agendar.html" class="btn btn-outline-success">Solicitar info</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card h-100 border-warning">
+                  <div class="card-body text-center">
+                    <h3 class="card-title">Clases de Automaquillaje</h3>
+                    <p class="card-text">Desde <strong>$1,500 MXN (~$88 USD)</strong></p>
+                    <ul class="list-unstyled mb-3">
+                      <li>Clase personalizada (2 hrs)</li>
+                      <li>Material de apoyo digital</li>
+                      <li>Asesoría sobre tu kit</li>
+                    </ul>
+                    <a href="agendar.html" class="btn btn-outline-warning">Apartar lugar</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-12 mb-4 text-center">
+                <!-- Insignias de métodos de pago y política de cancelación -->
+                <span title="Pago con transferencia" aria-label="Pago con transferencia bancaria" style="margin-right:8px;">
+                  <svg width="32" height="32" fill="#198754" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 6.5A2.5 2.5 0 0 1 4.5 4h15A2.5 2.5 0 0 1 22 6.5v11A2.5 2.5 0 0 1 19.5 20h-15A2.5 2.5 0 0 1 2 17.5v-11ZM4.5 5A1.5 1.5 0 0 0 3 6.5V7h18v-.5A1.5 1.5 0 0 0 19.5 5h-15Zm15 14A1.5 1.5 0 0 0 21 17.5V8H3v9.5A1.5 1.5 0 0 0 4.5 19h15Z"/><rect x="6" y="10" width="12" height="2" rx="1" fill="#0d6efd"/></svg>
+                </span>
+                <span title="Pago en efectivo" aria-label="Pago en efectivo" style="margin-right:8px;">
+                  <svg width="32" height="32" fill="#ffc107" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="7" width="20" height="10" rx="2" fill="#ffc107" stroke="#bfa100" stroke-width="1.5"/><circle cx="12" cy="12" r="2.5" fill="#fff" stroke="#bfa100" stroke-width="1.2"/></svg>
+                </span>
+                <span title="Política de cancelación" aria-label="Política de cancelación" style="margin-right:8px;">
+                  <svg width="32" height="32" fill="#dc3545" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="3" fill="#fff" stroke="#dc3545" stroke-width="2"/><path d="M8 12h8M12 8v8" stroke="#dc3545" stroke-width="2" stroke-linecap="round"/></svg>
+                </span>
+                <span class="text-muted" style="font-size:0.95rem;">Acepto transferencia, efectivo y anticipo. Consulta la <a href="#faq" class="text-decoration-underline">política de cancelación</a>.</span>
+              </div>
+            </div>
+            <p class="text-center text-muted mt-3" style="font-size:0.95rem;">*Precios orientativos. Los costos pueden variar según requerimientos, ubicación y número de personas. Solicita tu cotización personalizada.<br>Los precios en USD son aproximados y pueden variar según el tipo de cambio.</p>
+          </div>
+        </section>
+
         <!-- 5. Galería (Simplificada) -->
-        <section id="galeria" class="py-5">
+        <section id="galeria" class="py-5" data-aos="fade-up">
             <div class="container">
                 <h2 class="text-center mb-5">Galería</h2>
                 <div class="row">
                     <!-- Imagen 1 con Lightbox -->
                     <div class="col-6 col-md-4 col-lg-3 mb-4">
-                        <a href="#" data-bs-toggle="modal" data-bs-target="#galleryModal1">
-                            <img src="images/gallery-1.png" class="img-fluid" alt="Rostro de una mujer sin maquillaje, antes de la sesión.">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#galleryModal1" aria-label="Ver imagen ampliada: Sin Maquillaje">
+                            <img src="images/gallery-1.png" class="img-fluid" alt="Rostro de una mujer sin maquillaje, antes de la sesión." loading="lazy">
                         </a>
                     </div>
                      <!-- Imagen 2 con Lightbox -->
                     <div class="col-6 col-md-4 col-lg-3 mb-4">
-                        <a href="#" data-bs-toggle="modal" data-bs-target="#galleryModal2">
-                            <img src="images/gallery-2.png" class="img-fluid" alt="Look de noche con ojos ahumados y piel luminosa.">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#galleryModal2" aria-label="Ver imagen ampliada: Look Elegante">
+                            <img src="images/gallery-2.png" class="img-fluid" alt="Look de noche con ojos ahumados y piel luminosa." loading="lazy">
                         </a>
                     </div>
                     <!-- Imagen 3 con Lightbox -->
                     <div class="col-6 col-md-4 col-lg-3 mb-4">
-                        <a href="#" data-bs-toggle="modal" data-bs-target="#galleryModal3">
-                            <img src="images/gallery-3.png" class="img-fluid" alt="Look colorido con labios vibrantes y piel radiante.">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#galleryModal3" aria-label="Ver imagen ampliada: Look Colorido">
+                            <img src="images/gallery-3.png" class="img-fluid" alt="Look colorido con labios vibrantes y piel radiante." loading="lazy">
                         </a>
                     </div>
-                    <!-- Imagen 3 con Lightbox -->
+                    <!-- Imagen 4 con Lightbox -->
                     <div class="col-6 col-md-4 col-lg-3 mb-4">
-                        <a href="#" data-bs-toggle="modal" data-bs-target="#galleryModal4">
-                            <img src="images/gallery-4.png" class="img-fluid" alt="Look vibrante con ojos verdes y piel radiante.">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#galleryModal4" aria-label="Ver imagen ampliada: Look Atrevido">
+                            <img src="images/gallery-4.png" class="img-fluid" alt="Look vibrante con ojos verdes y piel radiante." loading="lazy">
                         </a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- 6. Testimonios -->
-        <section id="testimonios" class="py-5 bg-light">
+        <!-- 6. Tips de Maquillaje -->
+        <section id="blog" class="py-5 bg-white" data-aos="fade-up">
+          <div class="container">
+            <h2 class="text-center mb-5">Tips </h2>
+            <div class="row justify-content-center">
+              <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card h-100 shadow-sm">
+                  <img src="images/tip-1.png" class="card-img-top" alt="Tip: Duración del maquillaje" loading="lazy">
+                  <div class="card-body">
+                    <h3 class="card-title">¿Cómo lograr que tu maquillaje dure más?</h3>
+                    <p class="card-text">Prepara bien tu piel: limpieza, hidratación y primer. Usa productos de larga duración y sella con polvo y spray fijador. ¡No olvides retocar labios y zona T!</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card h-100 shadow-sm">
+                  <img src="images/tip-2.png" class="card-img-top" alt="Tip: Maquillaje natural" loading="lazy">
+                  <div class="card-body">
+                    <h3 class="card-title">Trucos para un look natural y radiante</h3>
+                    <p class="card-text">Menos es más: usa bases ligeras, corrector solo donde lo necesites y rubor en crema para un efecto fresco. Ilumina puntos clave y difumina bien los productos.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card h-100 shadow-sm">
+                  <img src="images/tip-3.png" class="card-img-top" alt="Tip: Cuidado de brochas" loading="lazy">
+                  <div class="card-body">
+                    <h3 class="card-title">¿Cómo evitar que el delineado se corra?</h3>
+                    <p class="card-text">Aplica primero una prebase en párpados, usa delineador waterproof y sella con sombra del mismo tono. Retoca solo si es necesario a lo largo del día.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="text-center mt-4">
+              <a href="https://www.instagram.com/beautylab_mx_/" class="btn btn-primary" target="_blank" rel="noopener">Ver más tips y tutoriales</a>
+            </div>
+          </div>
+        </section>
+
+        <!-- 7. Testimonios -->
+        <section id="testimonios" class="py-5 bg-light" data-aos="fade-up">
             <div class="container">
                 <h2 class="text-center mb-5">Testimonios</h2>
                 <div class="row">
@@ -183,18 +363,150 @@
                 </div>
             </div>
         </section>
+        <!-- FAQ Section -->
+        <section id="faq" class="py-5 bg-white" data-aos="fade-up">
+          <div class="container">
+            <h2 class="text-center mb-5">Preguntas</h2>
+            <div class="accordion" id="faqAccordion">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faq1-heading">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">
+                    ¿Con cuánta anticipación debo agendar mi cita?
+                  </button>
+                </h2>
+                <div id="faq1" class="accordion-collapse collapse show" aria-labelledby="faq1-heading" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Te recomiendo agendar tu cita al menos 2 semanas antes del evento para asegurar disponibilidad, especialmente en temporada alta (bodas, graduaciones y fiestas). Si tienes una fecha especial, ¡reserva lo antes posible! Sin embargo, si necesitas un servicio de último minuto, contáctame y haré lo posible por ayudarte.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faq2-heading">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+                    ¿Qué productos utilizas para el maquillaje?
+                  </button>
+                </h2>
+                <div id="faq2" class="accordion-collapse collapse" aria-labelledby="faq2-heading" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Utilizo productos profesionales de marcas reconocidas como MAC, NARS, Urban Decay, Too Faced y Kryolan, entre otras. Todos los productos son de alta duración, resistentes al sudor y las lágrimas, y adecuados para todo tipo de piel, incluso pieles sensibles. Además, mantengo estrictos protocolos de higiene y desinfección en cada sesión.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faq3-heading">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+                    ¿Ofreces servicio a domicilio?
+                  </button>
+                </h2>
+                <div id="faq3" class="accordion-collapse collapse" aria-labelledby="faq3-heading" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Sí, ofrezco servicio a domicilio en Ciudad de México y áreas cercanas. El costo adicional depende de la distancia y la zona. Llevo todo el material necesario para que vivas la experiencia completa en la comodidad de tu casa, hotel o salón. Consulta disponibilidad y tarifas al agendar tu cita.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faq4-heading">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
+                    ¿Cuánto dura una sesión de maquillaje?
+                  </button>
+                </h2>
+                <div id="faq4" class="accordion-collapse collapse" aria-labelledby="faq4-heading" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Una sesión de maquillaje social suele durar entre 60 y 90 minutos, dependiendo del look y los detalles que desees. Para novias, la sesión puede tomar hasta 2 horas, ya que incluye prueba, preparación de piel y retoques finales. Las clases de automaquillaje tienen una duración aproximada de 2 horas.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faq5-heading">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5" aria-expanded="false" aria-controls="faq5">
+                    ¿Qué incluye una clase de automaquillaje?
+                  </button>
+                </h2>
+                <div id="faq5" class="accordion-collapse collapse" aria-labelledby="faq5-heading" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Las clases de automaquillaje son personalizadas y prácticas. Aprenderás técnicas adaptadas a tu tipo de rostro, selección de productos, herramientas, preparación de piel, corrección de imperfecciones, aplicación de base, contorno, ojos, labios y fijación. Incluye asesoría sobre tu propio kit y recomendaciones para mejorar tu rutina.
+                  </div>
+                </div>
+              </div>
+              <!-- FAQ ampliadas -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faq6-heading">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6" aria-expanded="false" aria-controls="faq6">
+                    ¿El maquillaje incluye pestañas postizas?
+                  </button>
+                </h2>
+                <div id="faq6" class="accordion-collapse collapse" aria-labelledby="faq6-heading" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Sí, todos los servicios de maquillaje social y de novia incluyen la aplicación de pestañas postizas de alta calidad, adaptadas a tu estilo y comodidad. Si prefieres no usarlas, ¡avísame!
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faq7-heading">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq7" aria-expanded="false" aria-controls="faq7">
+                    ¿Cómo puedo reservar y pagar mi cita?
+                  </button>
+                </h2>
+                <div id="faq7" class="accordion-collapse collapse" aria-labelledby="faq7-heading" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Puedes reservar tu cita a través del formulario de contacto, WhatsApp o Instagram. Para asegurar tu lugar, se solicita un anticipo vía transferencia bancaria o depósito. El resto se liquida el día del servicio.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faq8-heading">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq8" aria-expanded="false" aria-controls="faq8">
+                    ¿Qué pasa si necesito cancelar o reagendar?
+                  </button>
+                </h2>
+                <div id="faq8" class="accordion-collapse collapse" aria-labelledby="faq8-heading" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Si necesitas cancelar o cambiar la fecha de tu cita, avísame con al menos 48 horas de anticipación para reprogramar sin costo. El anticipo no es reembolsable en caso de cancelación sin aviso previo.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="faq9-heading">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq9" aria-expanded="false" aria-controls="faq9">
+                    ¿Realizas maquillaje para grupos o eventos?
+                  </button>
+                </h2>
+                <div id="faq9" class="accordion-collapse collapse" aria-labelledby="faq9-heading" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Sí, maquillo a grupos para bodas, graduaciones, sesiones de fotos y eventos especiales. Solicita una cotización personalizada para grupos y paquetes.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 8. Contacto -->
+        <section id="contacto" class="py-5 text-center bg-light" data-aos="fade-up">
+            <div class="container">
+                <h2 class="mb-4 text-center">Contacto</h2>
+                <p class="lead mb-4">Sígueme en mis redes sociales o envíame un correo o whatsapp para cualquier consulta.</p>
+                <p>
+                    <a href="https://www.instagram.com/beautylab_mx_" class="text-body mx-2" target="_blank" rel="noopener noreferrer" aria-label="Visita el perfil de Beauty Lab en Instagram">Instagram</a> |
+                    <a href="https://www.facebook.com/jaqueeliinee.briito/" class="text-body mx-2" target="_blank" rel="noopener noreferrer" aria-label="Visita el perfil de Beauty Lab en Facebook">Facebook</a> |
+                    <a href="mailto:jacky.brito97@gmail.com" class="text-body mx-2" aria-label="Enviar un correo a jacky.brito97@gmail.com">Email</a>
+                </p>
+            </div>
+        </section>
+
     </main>
 
-    <!-- 6. Footer -->
-    <footer id="contacto" class="bg-dark text-white text-center py-4">
-        <div class="container">
-            <p>Beauty Lab &copy; 2025. Todos los derechos reservados.</p>
-            <p>
-                <a href="https://www.instagram.com/beautylab_mx_" class="text-white" target="_blank" rel="noopener noreferrer">Instagram</a> | 
-                <a href="https://www.facebook.com/jaqueeliinee.briito/" class="text-white" target="_blank" rel="noopener noreferrer">Facebook</a> | 
-                <a href="mailto:jacky.brito97@gmail.com" class="text-white">Email</a>
-            </p>
+    
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+      <div class="container">
+        <p class="mb-0">Beauty Lab &copy; 2025. Todos los derechos reservados. | <a href="aviso-privacidad.html" class="text-white-50">Aviso de privacidad</a></p>
+        <div class="mt-2">
+          <a href="https://www.instagram.com/beautylab_mx_" class="text-white mx-2" target="_blank" aria-label="Instagram"><svg width="20" height="20" fill="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.584.012 4.85.07 1.17.056 1.97.24 2.43.41.59.22 1.01.48 1.45.92.44.44.7.86.92 1.45.17.46.354 1.26.41 2.43.058 1.266.07 1.65.07 4.85s-.012 3.584-.07 4.85c-.056 1.17-.24 1.97-.41 2.43-.22.59-.48 1.01-.92 1.45-.44.44-.86.7-1.45.92-.46.17-1.26.354-2.43.41-1.266.058-1.65.07-4.85.07s-3.584-.012-4.85-.07c-1.17-.056-1.97-.24-2.43-.41-.59-.22-1.01-.48-1.45-.92-.44-.44-.7-.86-.92-1.45-.17-.46-.354-1.26-.41-2.43C2.212 15.784 2.2 15.4 2.2 12s.012-3.584.07-4.85c.056-1.17.24-1.97.41-2.43.22-.59.48-1.01.92-1.45.44-.44.86-.7 1.45-.92.91-.3 2-.49 3.282-.548C8.416 2.212 8.8 2.2 12 2.2zm0-2.2C8.736 0 8.332.013 7.052.072 5.77.13 4.68.32 3.77.62c-.97.32-1.8.77-2.62 1.59C.32 3.68.13 4.77.072 6.052.013 7.332 0 7.736 0 12c0 4.264.013 4.668.072 5.948.058 1.282.248 2.372.548 3.282.32.97.77 1.8 1.59 2.62.82.82 1.65 1.27 2.62 1.59.91.3 2 .49 3.282.548C8.332 23.987 8.736 24 12 24s3.668-.013 4.948-.072c1.282-.058 2.372-.248 3.282-.548.97-.32 1.8-.77 2.62-1.59.82-.82 1.27-1.65 1.59-2.62.3-.91.49-2 .548-3.282C23.987 16.668 24 16.264 24 12c0-4.264-.013-4.668-.072-5.948-.058-1.282-.248-2.372-.548-3.282-.32-.97-.77-1.8-1.59-2.62C20.32.32 19.49-.13 18.52-.45c-.91-.3-2-.49-3.282-.548C15.668.013 15.264 0 12 0z"/><path d="M12 5.838A6.162 6.162 0 1 0 12 18.162 6.162 6.162 0 1 0 12 5.838zm0 10.162A4 4 0 1 1 12 8a4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 0 0 0-2.88z"/></a>
+          <a href="https://www.facebook.com/jaqueeliinee.briito/" class="text-white mx-2" target="_blank" aria-label="Facebook"><svg width="20" height="20" fill="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M22.675 0h-21.35C.595 0 0 .592 0 1.326v21.348C0 23.408.595 24 1.326 24H12.82v-9.294H9.692V11.01h3.127V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.797.143v3.24l-1.918.001c-1.504 0-1.797.715-1.797 1.763v2.313h3.587l-.467 3.696h-3.12V24h6.116C23.406 24 24 23.408 24 22.674V1.326C24 .592 23.406 0 22.675 0"/></svg></a>
+          <a href="mailto:jacky.brito97@gmail.com" class="text-white mx-2" aria-label="Email"><svg width="20" height="20" fill="currentColor" aria-hidden="true" focusable="false" viewBox="0 0 16 16"><path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.708 2.825L15 11.118V5.383zm-.034 6.876-5.396-3.24L8 9.583l-.57-.564-5.396 3.24A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741zM1 11.118l4.708-2.91L1 5.383v5.735z"/></svg></a>
         </div>
+      </div>
     </footer>
 
     <!-- Modal para la Galería (Imagen 1) -->
@@ -260,5 +572,135 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- AOS Animation JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({ duration: 900, once: true });
+    </script>
+    <!-- Botón Ir Arriba -->
+    <button id="btn-top" aria-label="Ir arriba" title="Ir arriba">↑</button>
+    <script>
+      // Mostrar/ocultar botón Ir Arriba
+      window.addEventListener('scroll', function() {
+        const btn = document.getElementById('btn-top');
+        if (window.scrollY > 300) {
+          btn.style.display = 'flex';
+        } else {
+          btn.style.display = 'none';
+        }
+      });
+      document.getElementById('btn-top').onclick = function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      };
+    </script>
+    <script>
+    // Navbar sombra al hacer scroll
+    window.addEventListener('scroll', function() {
+      const nav = document.getElementById('mainNavbar');
+      if(window.scrollY > 30) {
+        nav.classList.add('shadow');
+      } else {
+        nav.classList.remove('shadow');
+      }
+    });
+    // Tooltip WhatsApp
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+    tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl);
+    });
+    // Accesibilidad: feedback visual en links al enfocar y en todos los botones/cards
+    const navLinks = document.querySelectorAll('.navbar-nav .nav-link, .btn, .card');
+    navLinks.forEach(function(link) {
+      link.addEventListener('focus', function() {
+        this.style.outline = '2px solid #86b7fe';
+        this.style.background = '#f8f9fa';
+        this.style.color = '#212529';
+      });
+      link.addEventListener('blur', function() {
+        this.style.outline = '';
+        this.style.background = '';
+        this.style.color = '';
+      });
+    });
+    // Navegación por teclado visible en todos los elementos interactivos
+    const allInteractive = document.querySelectorAll('a, button, input, select, textarea, .card');
+    allInteractive.forEach(function(el) {
+      el.addEventListener('focus', function() {
+        this.classList.add('focus-visible');
+      });
+      el.addEventListener('blur', function() {
+        this.classList.remove('focus-visible');
+      });
+    });
+    </script>
+    <!-- Mejoras de accesibilidad y SEO en títulos principales -->
+    <script>
+      // Cambia h2 de secciones principales a h1 solo en la primera sección visible (Hero)
+      document.addEventListener('DOMContentLoaded', function() {
+        var hero = document.querySelector('.hero-section h1');
+        if(hero) hero.setAttribute('tabindex', '0');
+        var secciones = document.querySelectorAll('section h2');
+        secciones.forEach(function(h2) {
+          h2.setAttribute('tabindex', '0');
+        });
+      });
+    </script>
+
+    <!-- Aviso de cookies -->
+    <div id="cookie-banner" style="position:fixed;bottom:0;left:0;width:100%;background:#212529;color:#fff;padding:12px 0;z-index:99999;display:none;">
+      <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between">
+        <span>Este sitio utiliza cookies para mejorar tu experiencia. Consulta la <a href="aviso-privacidad.html" class="text-white-50 text-decoration-underline">política de privacidad</a>.</span>
+        <button class="btn btn-outline-light btn-sm mt-2 mt-md-0" onclick="aceptarCookies()" aria-label="Aceptar cookies">Aceptar</button>
+      </div>
+    </div>
+    <script>
+      // Aviso de cookies simple
+      function aceptarCookies() {
+        document.getElementById('cookie-banner').style.display = 'none';
+        localStorage.setItem('cookiesAceptadas', '1');
+      }
+      window.addEventListener('DOMContentLoaded', function() {
+        if(!localStorage.getItem('cookiesAceptadas')) {
+          document.getElementById('cookie-banner').style.display = 'block';
+        }
+      });
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "Maquillaje profesional, Novias, Clases de automaquillaje",
+      "provider": {
+        "@type": "Person",
+        "name": "Jacky Brito"
+      },
+      "areaServed": "Ciudad de México y alrededores",
+      "availableChannel": {
+        "@type": "ServiceChannel",
+        "serviceUrl": "https://www.tu-dominio.com/"
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Review",
+      "itemReviewed": {
+        "@type": "Service",
+        "name": "Maquillaje profesional"
+      },
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Sofía L."
+      },
+      "reviewBody": "¡El maquillaje fue espectacular! Duró toda la noche y recibí muchísimos cumplidos. Jacky es una verdadera profesional y muy talentosa."
+    }
+    </script>
+    <!-- Carga diferida de scripts no críticos ya está implementada con defer en Bootstrap y AOS -->
 </body>
 </html>
