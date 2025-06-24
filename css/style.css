@@ -24,7 +24,7 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
 h2::after {
     content: '';
     display: block;
-    width: 130px;
+    width: 200px;
     height: 3px;
     background-color: var(--color-accent);
     margin-top: 10px;
@@ -38,7 +38,7 @@ h2.text-center::after {
 
 .hero-section {
     /* Ahora usa una imagen local para mayor fiabilidad y rapidez */
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/hero-background..jpeg') no-repeat center center;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/hero-background.jpeg') no-repeat center center;
     background-size: cover;
     height: 80vh; /* Altura del 80% de la ventana */
     position: relative;
@@ -92,6 +92,31 @@ h2.text-center::after {
 .card:hover {
     transform: translateY(-10px); /* Efecto sutil al pasar el mouse */
     border-color: var(--color-accent);
+}
+
+/* Sección de Testimonios */
+#testimonios {
+    background-color: var(--color-light);
+}
+
+.testimonial-card {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    border-left: 5px solid var(--color-accent);
+    height: 100%;
+}
+
+.testimonial-text {
+    font-style: italic;
+    color: #555;
+}
+
+.testimonial-author {
+    font-weight: bold;
+    text-align: right;
+    color: var(--color-dark);
 }
 
 footer a:hover {
