@@ -50,7 +50,7 @@ h2.text-center::after {
     color: var(--color-dark);
 }
 
-/* Barra de navegación oscura */
+/* Estilos para la barra de navegación */
 .navbar {
     background-color: var(--color-dark) !important;
 }
@@ -72,7 +72,7 @@ h2.text-center::after {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(248, 249, 250, 0.85)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
-/* Sección de servicios con fondo oscuro */
+/* Estilos para la sección de servicios */
 #servicios {
     background-color: var(--color-dark);
 }
@@ -94,7 +94,12 @@ h2.text-center::after {
     border-color: var(--color-accent);
 }
 
-/* Sección de Testimonios */
+/* Estilos para la sección de galería */
+#galeria a {
+    cursor: zoom-in;
+}
+
+/* Estilos para la sección de testimonios */
 #testimonios {
     background-color: var(--color-light);
 }
@@ -119,40 +124,8 @@ h2.text-center::after {
     color: var(--color-dark);
 }
 
-footer a:hover {
-    color: var(--color-accent) !important;
-}
-
-/* 3. Estilos para el Formulario de Agendar Cita */
-#agendar-cita form {
-    background-color: #ffffff;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-    border: 1px solid #ddd;
-}
-
-.form-control:focus,
-.form-select:focus {
-    border-color: var(--color-accent);
-    box-shadow: 0 0 0 0.25rem rgba(212, 175, 55, 0.25); /* Dorado con opacidad */
-}
-
-.btn-submit {
-    background-color: var(--color-dark);
-    color: var(--color-light);
-    border: 2px solid var(--color-dark);
-    padding: 0.75rem 1.5rem;
-    font-weight: bold;
-    transition: all 0.3s ease;
-}
-
-.btn-submit:hover {
-    background-color: var(--color-accent);
-    color: var(--color-dark);
-    border-color: var(--color-accent);
-}
-
-.google-form iframe {
-    max-width: 100%; /* Ensures the form doesn't overflow on smaller screens */
+/* Estilos para el pie de página */
+footer .text-white:hover {
+    color: var(--color-accent); /* Eliminamos !important */
+    text-decoration: none; /* Opcional: para quitar el subrayado al pasar el mouse */
 }

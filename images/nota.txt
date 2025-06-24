@@ -1,0 +1,14 @@
+hero-background.jpg (para el fondo principal)
+profile-photo.jpg (para tu foto en "Sobre Mí")
+service-social.jpg, service-bride.jpg, service-class.jpg (para los servicios)
+gallery-1.jpg, gallery-2.jpg, etc. (para la galería)
+
+
+git init
+
+git remote add origin https://github.com/JackyBrito/BeautyLab.git
+
+git add .
+git commit -m "Subiendo mi sitio web"
+git branch -M main
+git push -u origin main
