@@ -8,6 +8,8 @@
     <meta name="description" content="Servicios de maquillaje profesional en Ciudad de México. Especialista en maquillaje para novias, eventos sociales y clases de automaquillaje. ¡Agenda tu cita y realza tu belleza!">
     <meta name="keywords" content="maquilladora, maquillaje profesional, novias, bodas, eventos, automaquillaje, beauty lab">
     <meta name="robots" content="index, follow">
+    <link rel="alternate" hreflang="es" href="https://www.tu-dominio.com/index.html" />
+    <link rel="alternate" hreflang="en" href="https://www.tu-dominio.com/index-en.html" />
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -112,9 +114,6 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#contacto">Contacto</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="agendar.html">Agendar Cita</a>
-                    </li>
                     <li class="nav-item ms-lg-3">
                         <a class="btn btn-outline-light d-flex align-items-center px-3 py-1" href="index-en.html" lang="en" hreflang="en" aria-label="Switch to English version" style="font-weight:500; border-radius: 2rem; background:rgba(255,255,255,0.08);">
                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" focusable="false" style="margin-right:6px;">
@@ -138,7 +137,7 @@
             <div class="container">
                 <h1 class="display-3">Realza tu belleza natural</h1>
                 <p class="lead">Servicios de maquillaje profesional para bodas, eventos y más.</p>
-                <a href="agendar.html" class="btn btn-outline-light btn-lg mt-3">Agenda tu cita</a>
+                <a href="https://calendly.com/jacky-brito97/agendar" class="btn btn-outline-light btn-lg mt-3" target="_blank" rel="noopener noreferrer">Agenda tu cita</a>
             </div>
         </section>
 
@@ -152,7 +151,7 @@
                     <div class="col-lg-6">
                         <h2 class="text-center">Sobre Mí</h2>
                         <p class="lead">Hola, soy Jacky Brito</p>
-                        <p>Mi pasión es ayudarte a sentirte y verte espectacular en tus momentos más especiales. Me especializo en maquillaje social, novias y editorial, utilizando siempre productos de alta calidad para garantizar un resultado impecable y duradero.</p>
+                        <p>Mi pasión es ayudarte a sentirte y verte espectacular en tus momentos más especiales. Como maquilladora profesional en Ciudad de México, me especializo en maquillaje social, novias y editorial, utilizando siempre productos de alta calidad para garantizar un resultado impecable y duradero.</p>
                     </div>
                 </div>
             </div>
@@ -162,34 +161,38 @@
         <section id="servicios" class="py-5" data-aos="fade-up">
             <div class="container">
                 <h2 class="text-center mb-5">Servicios</h2>
+                <p class="text-center section-desc text-white" style="font-weight:500;">Novias, social y clases de automaquillaje. Realza tu belleza para cualquier evento.</p>
                 <div class="row">
                     <!-- Servicio 1 -->
                     <div class="col-md-6 col-lg-4 mb-4">
                         <div class="card h-100 text-center">
-                            <img src="images/service-social.jpeg" class="card-img-top" alt="Maquillaje Social" loading="lazy">
+                            <img src="images/service-social.jpeg" class="card-img-top" alt="Maquillaje Social" loading="lazy" data-bs-toggle="modal" data-bs-target="#modalSocial" style="cursor:pointer;">
                             <div class="card-body">
                                 <h3 class="card-title">Maquillaje Social</h3>
                                 <p class="card-text">Perfecto para fiestas, graduaciones o cualquier evento donde quieras lucir radiante.</p>
+                                <button class="btn btn-outline-primary mt-2" data-bs-toggle="modal" data-bs-target="#modalSocial">Más información</button>
                             </div>
                         </div>
                     </div>
                     <!-- Servicio 2 -->
                     <div class="col-md-6 col-lg-4 mb-4">
                         <div class="card h-100 text-center">
-                            <img src="images/service-bride.jpeg" class="card-img-top" alt="Maquillaje para Novias" loading="lazy">
+                            <img src="images/service-bride.jpeg" class="card-img-top" alt="Maquillaje para Novias" loading="lazy" data-bs-toggle="modal" data-bs-target="#modalNovia" style="cursor:pointer;">
                             <div class="card-body">
                                 <h3 class="card-title">Maquillaje para Novias</h3>
                                 <p class="card-text">Un servicio completo y personalizado para que brilles en tu gran día.</p>
+                                <button class="btn btn-outline-success mt-2" data-bs-toggle="modal" data-bs-target="#modalNovia">Más información</button>
                             </div>
                         </div>
                     </div>
                     <!-- Servicio 3 -->
                     <div class="col-md-6 col-lg-4 mb-4">
                         <div class="card h-100 text-center">
-                            <img src="images/service-class.png" class="card-img-top" alt="Clases de Automaquillaje" loading="lazy">
+                            <img src="images/service-class.png" class="card-img-top" alt="Clases de Automaquillaje" loading="lazy" data-bs-toggle="modal" data-bs-target="#modalClase" style="cursor:pointer;">
                             <div class="card-body">
                                 <h3 class="card-title">Clases de Automaquillaje</h3>
                                 <p class="card-text">Aprende a maquillarte como una profesional y saca el máximo partido a tus rasgos.</p>
+                                <button class="btn btn-outline-warning mt-2" data-bs-toggle="modal" data-bs-target="#modalClase">Más información</button>
                             </div>
                         </div>
                     </div>
@@ -197,78 +200,74 @@
             </div>
         </section>
 
-        <!-- Sección de Precios -->
-        <section id="precios" class="py-5 bg-light" data-aos="fade-up">
-          <div class="container">
-            <h2 class="text-center mb-5">Precios</h2>
-            <div class="row justify-content-center">
-              <div class="col-md-6 col-lg-4 mb-4">
-                <div class="card h-100 border-primary">
-                  <div class="card-body text-center">
-                    <h3 class="card-title">Maquillaje Social</h3>
-                    <p class="card-text">Desde <strong>$1,200 MXN (~$70 USD)</strong></p>
-                    <ul class="list-unstyled mb-3">
-                      <li>Preparación de piel profesional</li>
-                      <li>Maquillaje personalizado</li>
-                      <li>Pestañas postizas incluidas</li>
-                    </ul>
-                    <a href="agendar.html" class="btn btn-outline-primary">Agendar</a>
-                  </div>
-                </div>
+        <!-- Modales de información de servicios -->
+        <div class="modal fade" id="modalSocial" tabindex="-1" aria-labelledby="modalSocialLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalSocialLabel">Maquillaje Social</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
               </div>
-              <div class="col-md-6 col-lg-4 mb-4">
-                <div class="card h-100 border-success">
-                  <div class="card-body text-center">
-                    <h3 class="card-title">Novias</h3>
-                    <p class="card-text">Paquete desde <strong>$4,000 MXN (~$235 USD)</strong></p>
-                    <ul class="list-unstyled mb-3">
-                      <li>Prueba de maquillaje</li>
-                      <li>Maquillaje el día del evento</li>
-                      <li>Pestañas postizas premium</li>
-                      <li>Retoque final</li>
-                    </ul>
-                    <a href="agendar.html" class="btn btn-outline-success">Solicitar info</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-4 mb-4">
-                <div class="card h-100 border-warning">
-                  <div class="card-body text-center">
-                    <h3 class="card-title">Clases de Automaquillaje</h3>
-                    <p class="card-text">Desde <strong>$1,500 MXN (~$88 USD)</strong></p>
-                    <ul class="list-unstyled mb-3">
-                      <li>Clase personalizada (2 hrs)</li>
-                      <li>Material de apoyo digital</li>
-                      <li>Asesoría sobre tu kit</li>
-                    </ul>
-                    <a href="agendar.html" class="btn btn-outline-warning">Apartar lugar</a>
-                  </div>
-                </div>
+              <div class="modal-body">
+                <ul class="list-unstyled mb-3">
+                  <li>Desde <strong>$1,200 MXN (~$70 USD)</strong></li>
+                  <li>Preparación de piel profesional</li>
+                  <li>Maquillaje personalizado</li>
+                  <li>Pestañas postizas incluidas</li>
+                </ul>
+                <p class="text-muted mb-1" style="font-size:0.95rem;">*Precios orientativos. Los costos pueden variar según requerimientos, ubicación y número de personas. Solicita tu cotización personalizada.<br>Los precios en USD son aproximados y pueden variar según el tipo de cambio.</p>
+                <a href="https://calendly.com/jacky-brito97/agendar" class="btn btn-primary mt-3" target="_blank" rel="noopener noreferrer">Agendar</a>
               </div>
             </div>
-            <div class="row justify-content-center">
-              <div class="col-12 mb-4 text-center">
-                <!-- Insignias de métodos de pago y política de cancelación -->
-                <span title="Pago con transferencia" aria-label="Pago con transferencia bancaria" style="margin-right:8px;">
-                  <svg width="32" height="32" fill="#198754" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 6.5A2.5 2.5 0 0 1 4.5 4h15A2.5 2.5 0 0 1 22 6.5v11A2.5 2.5 0 0 1 19.5 20h-15A2.5 2.5 0 0 1 2 17.5v-11ZM4.5 5A1.5 1.5 0 0 0 3 6.5V7h18v-.5A1.5 1.5 0 0 0 19.5 5h-15Zm15 14A1.5 1.5 0 0 0 21 17.5V8H3v9.5A1.5 1.5 0 0 0 4.5 19h15Z"/><rect x="6" y="10" width="12" height="2" rx="1" fill="#0d6efd"/></svg>
-                </span>
-                <span title="Pago en efectivo" aria-label="Pago en efectivo" style="margin-right:8px;">
-                  <svg width="32" height="32" fill="#ffc107" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="7" width="20" height="10" rx="2" fill="#ffc107" stroke="#bfa100" stroke-width="1.5"/><circle cx="12" cy="12" r="2.5" fill="#fff" stroke="#bfa100" stroke-width="1.2"/></svg>
-                </span>
-                <span title="Política de cancelación" aria-label="Política de cancelación" style="margin-right:8px;">
-                  <svg width="32" height="32" fill="#dc3545" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="3" fill="#fff" stroke="#dc3545" stroke-width="2"/><path d="M8 12h8M12 8v8" stroke="#dc3545" stroke-width="2" stroke-linecap="round"/></svg>
-                </span>
-                <span class="text-muted" style="font-size:0.95rem;">Acepto transferencia, efectivo y anticipo. Consulta la <a href="#faq" class="text-decoration-underline">política de cancelación</a>.</span>
-              </div>
-            </div>
-            <p class="text-center text-muted mt-3" style="font-size:0.95rem;">*Precios orientativos. Los costos pueden variar según requerimientos, ubicación y número de personas. Solicita tu cotización personalizada.<br>Los precios en USD son aproximados y pueden variar según el tipo de cambio.</p>
           </div>
-        </section>
+        </div>
+        <div class="modal fade" id="modalNovia" tabindex="-1" aria-labelledby="modalNoviaLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalNoviaLabel">Maquillaje para Novias</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+              </div>
+              <div class="modal-body">
+                <ul class="list-unstyled mb-3">
+                  <li>Paquete desde <strong>$4,000 MXN (~$235 USD)</strong></li>
+                  <li>Prueba de maquillaje</li>
+                  <li>Maquillaje el día del evento</li>
+                  <li>Pestañas postizas premium</li>
+                  <li>Retoque final</li>
+                </ul>
+                <p class="text-muted mb-1" style="font-size:0.95rem;">*Precios orientativos. Los costos pueden variar según requerimientos, ubicación y número de personas. Solicita tu cotización personalizada.<br>Los precios en USD son aproximados y pueden variar según el tipo de cambio.</p>
+                <a href="https://calendly.com/jacky-brito97/agendar" class="btn btn-success mt-3" target="_blank" rel="noopener noreferrer">Agendar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="modalClase" tabindex="-1" aria-labelledby="modalClaseLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalClaseLabel">Clases de Automaquillaje</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+              </div>
+              <div class="modal-body">
+                <ul class="list-unstyled mb-3">
+                  <li>Desde <strong>$1,500 MXN (~$88 USD)</strong></li>
+                  <li>Clase personalizada (2 hrs)</li>
+                  <li>Material de apoyo digital</li>
+                  <li>Asesoría sobre tu kit</li>
+                </ul>
+                <p class="text-muted mb-1" style="font-size:0.95rem;">*Precios orientativos. Los costos pueden variar según requerimientos, ubicación y número de personas. Solicita tu cotización personalizada.<br>Los precios en USD son aproximados y pueden variar según el tipo de cambio.</p>
+                <a href="https://calendly.com/jacky-brito97/agendar" class="btn btn-warning mt-3" target="_blank" rel="noopener noreferrer">Agendar</a>
+              </div>
+            </div>
+          </div>
+        </div>
 
         <!-- 5. Galería (Simplificada) -->
         <section id="galeria" class="py-5" data-aos="fade-up">
             <div class="container">
                 <h2 class="text-center mb-5">Galería</h2>
+                <p class="text-center section-desc">Antes y después, looks de eventos y maquillaje creativo. ¡Conoce resultados reales!</p>
                 <div class="row">
                     <!-- Imagen 1 con Lightbox -->
                     <div class="col-6 col-md-4 col-lg-3 mb-4">
@@ -300,192 +299,265 @@
 
         <!-- 6. Tips de Maquillaje -->
         <section id="blog" class="py-5 bg-white" data-aos="fade-up">
-          <div class="container">
-            <h2 class="text-center mb-5">Tips </h2>
-            <div class="row justify-content-center">
-              <div class="col-md-6 col-lg-4 mb-4">
-                <div class="card h-100 shadow-sm">
-                  <img src="images/tip-1.png" class="card-img-top" alt="Tip: Duración del maquillaje" loading="lazy">
-                  <div class="card-body">
-                    <h3 class="card-title">¿Cómo lograr que tu maquillaje dure más?</h3>
-                    <p class="card-text">Prepara bien tu piel: limpieza, hidratación y primer. Usa productos de larga duración y sella con polvo y spray fijador. ¡No olvides retocar labios y zona T!</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-4 mb-4">
-                <div class="card h-100 shadow-sm">
-                  <img src="images/tip-2.png" class="card-img-top" alt="Tip: Maquillaje natural" loading="lazy">
-                  <div class="card-body">
-                    <h3 class="card-title">Trucos para un look natural y radiante</h3>
-                    <p class="card-text">Menos es más: usa bases ligeras, corrector solo donde lo necesites y rubor en crema para un efecto fresco. Ilumina puntos clave y difumina bien los productos.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-4 mb-4">
-                <div class="card h-100 shadow-sm">
-                  <img src="images/tip-3.png" class="card-img-top" alt="Tip: Cuidado de brochas" loading="lazy">
-                  <div class="card-body">
-                    <h3 class="card-title">¿Cómo evitar que el delineado se corra?</h3>
-                    <p class="card-text">Aplica primero una prebase en párpados, usa delineador waterproof y sella con sombra del mismo tono. Retoca solo si es necesario a lo largo del día.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="text-center mt-4">
-              <a href="https://www.instagram.com/beautylab_mx_/" class="btn btn-primary" target="_blank" rel="noopener">Ver más tips y tutoriales</a>
-            </div>
+  <div class="container">
+    <h2 class="text-center mb-5">Tips</h2>
+    <p class="text-center section-desc">Consejos, trucos y tutoriales de maquillaje para sacar el máximo provecho a tu look.</p>
+    <!-- Carrusel visible en todos los dispositivos -->
+    <div>
+      <div id="tipsCarousel" class="carousel slide" data-bs-ride="carousel" aria-label="Tips de maquillaje">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#tipsCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Tip 1"></button>
+          <button type="button" data-bs-target="#tipsCarousel" data-bs-slide-to="1" aria-label="Tip 2"></button>
+          <button type="button" data-bs-target="#tipsCarousel" data-bs-slide-to="2" aria-label="Tip 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <a href="#tipModal1" data-bs-toggle="modal" aria-label="Ver tip: Duración del maquillaje">
+              <img src="images/tip-1.png" class="img-fluid rounded shadow-sm mx-auto d-block" alt="Tip: Duración del maquillaje" style="max-height:600px;">
+            </a>
           </div>
-        </section>
+          <div class="carousel-item">
+            <a href="#tipModal2" data-bs-toggle="modal" aria-label="Ver tip: Look natural y radiante">
+              <img src="images/tip-2.png" class="img-fluid rounded shadow-sm mx-auto d-block" alt="Tip: Maquillaje natural" style="max-height:600px;">
+            </a>
+          </div>
+          <div class="carousel-item">
+            <a href="#tipModal3" data-bs-toggle="modal" aria-label="Ver tip: Evitar que el delineado se corra">
+              <img src="images/tip-3.png" class="img-fluid rounded shadow-sm mx-auto d-block" alt="Tip: Cuidado de brochas" style="max-height:600px;">
+            </a>
+          </div>
+        </div>
+        <!-- Flechas eliminadas: solo indicadores -->
+      </div>
+    </div>
+    <!-- Eliminada la cuadrícula de tips en escritorio/tablet -->
+  </div>
+</section>
+<!-- Modales para tips -->
+<div class="modal fade" id="tipModal1" tabindex="-1" aria-labelledby="tipModalLabel1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content bg-dark">
+      <div class="modal-header border-0">
+        <h5 class="modal-title text-white" id="tipModalLabel1">¿Cómo lograr que tu maquillaje dure más?</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body p-0 text-center">
+        <img src="images/tip-1.png" class="img-fluid" alt="Tip: Duración del maquillaje">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="tipModal2" tabindex="-1" aria-labelledby="tipModalLabel2" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content bg-dark">
+      <div class="modal-header border-0">
+        <h5 class="modal-title text-white" id="tipModalLabel2">Trucos para un look natural y radiante</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body p-0 text-center">
+        <img src="images/tip-2.png" class="img-fluid" alt="Tip: Maquillaje natural">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="tipModal3" tabindex="-1" aria-labelledby="tipModalLabel3" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content bg-dark">
+      <div class="modal-header border-0">
+        <h5 class="modal-title text-white" id="tipModalLabel3">¿Cómo evitar que el delineado se corra?</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body p-0 text-center">
+        <img src="images/tip-3.png" class="img-fluid" alt="Tip: Cuidado de brochas">
+      </div>
+    </div>
+  </div>
+</div>
 
         <!-- 7. Testimonios -->
         <section id="testimonios" class="py-5 bg-light" data-aos="fade-up">
             <div class="container">
                 <h2 class="text-center mb-5">Testimonios</h2>
-                <div class="row">
-                    <div class="col-md-6 col-lg-4 mb-4">
-                        <blockquote class="testimonial-card">
-                            <p class="testimonial-text">"¡El maquillaje fue espectacular! Duró toda la noche y recibí muchísimos cumplidos. Jacky es una verdadera profesional y muy talentosa."</p>
-                            <figcaption class="testimonial-author">- Sofía L.</figcaption>
-                        </blockquote>
+                <p class="text-center section-desc">Lo que opinan mis clientas sobre su experiencia con Beauty Lab.</p>
+                <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" aria-label="Testimonios de clientas">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Testimonio 1"></button>
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" aria-label="Testimonio 2"></button>
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2" aria-label="Testimonio 3"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <figure class="testimonial-card text-center mx-auto" style="max-width:600px;">
+                        <blockquote class="testimonial-text mb-3">"¡El maquillaje fue espectacular! Duró toda la noche y recibí muchísimos cumplidos. Jacky es una verdadera profesional y muy talentosa."</blockquote>
+                        <figcaption class="testimonial-author">- Sofía L.</figcaption>
+                      </figure>
                     </div>
-                    <div class="col-md-6 col-lg-4 mb-4">
-                        <blockquote class="testimonial-card">
-                            <p class="testimonial-text">"Me sentí como una reina el día de mi boda. Jacky entendió perfectamente lo que quería y el resultado fue mejor de lo que imaginé. ¡La recomiendo al 100%!"</p>
-                            <figcaption class="testimonial-author">- Mariana G.</figcaption>
-                        </blockquote>
+                    <div class="carousel-item">
+                      <figure class="testimonial-card text-center mx-auto" style="max-width:600px;">
+                        <blockquote class="testimonial-text mb-3">"Me sentí como una reina el día de mi boda. Jacky entendió perfectamente lo que quería y el resultado fue mejor de lo que imaginé. ¡La recomiendo al 100%!"</blockquote>
+                        <figcaption class="testimonial-author">- Mariana G.</figcaption>
+                      </figure>
                     </div>
-                    <div class="col-md-6 col-lg-4 mb-4">
-                        <blockquote class="testimonial-card">
-                            <p class="testimonial-text">"Las clases de automaquillaje fueron increíbles. Aprendí muchísimos trucos y ahora me siento mucho más segura al maquillarme. ¡Gracias, Jacky!"</p>
-                            <figcaption class="testimonial-author">- Valeria R.</figcaption>
-                        </blockquote>
+                    <div class="carousel-item">
+                      <figure class="testimonial-card text-center mx-auto" style="max-width:600px;">
+                        <blockquote class="testimonial-text mb-3">"Las clases de automaquillaje fueron increíbles. Aprendí muchísimos trucos y ahora me siento mucho más segura al maquillarme. ¡Gracias, Jacky!"</blockquote>
+                        <figcaption class="testimonial-author">- Valeria R.</figcaption>
+                      </figure>
                     </div>
+                  </div>
+                  <!-- Flechas eliminadas: solo indicadores -->
                 </div>
             </div>
         </section>
         <!-- FAQ Section -->
         <section id="faq" class="py-5 bg-white" data-aos="fade-up">
-          <div class="container">
-            <h2 class="text-center mb-5">Preguntas</h2>
-            <div class="accordion" id="faqAccordion">
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="faq1-heading">
-                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">
-                    ¿Con cuánta anticipación debo agendar mi cita?
-                  </button>
-                </h2>
-                <div id="faq1" class="accordion-collapse collapse show" aria-labelledby="faq1-heading" data-bs-parent="#faqAccordion">
-                  <div class="accordion-body">
-                    Te recomiendo agendar tu cita al menos 2 semanas antes del evento para asegurar disponibilidad, especialmente en temporada alta (bodas, graduaciones y fiestas). Si tienes una fecha especial, ¡reserva lo antes posible! Sin embargo, si necesitas un servicio de último minuto, contáctame y haré lo posible por ayudarte.
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="faq2-heading">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
-                    ¿Qué productos utilizas para el maquillaje?
-                  </button>
-                </h2>
-                <div id="faq2" class="accordion-collapse collapse" aria-labelledby="faq2-heading" data-bs-parent="#faqAccordion">
-                  <div class="accordion-body">
-                    Utilizo productos profesionales de marcas reconocidas como MAC, NARS, Urban Decay, Too Faced y Kryolan, entre otras. Todos los productos son de alta duración, resistentes al sudor y las lágrimas, y adecuados para todo tipo de piel, incluso pieles sensibles. Además, mantengo estrictos protocolos de higiene y desinfección en cada sesión.
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="faq3-heading">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
-                    ¿Ofreces servicio a domicilio?
-                  </button>
-                </h2>
-                <div id="faq3" class="accordion-collapse collapse" aria-labelledby="faq3-heading" data-bs-parent="#faqAccordion">
-                  <div class="accordion-body">
-                    Sí, ofrezco servicio a domicilio en Ciudad de México y áreas cercanas. El costo adicional depende de la distancia y la zona. Llevo todo el material necesario para que vivas la experiencia completa en la comodidad de tu casa, hotel o salón. Consulta disponibilidad y tarifas al agendar tu cita.
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="faq4-heading">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
-                    ¿Cuánto dura una sesión de maquillaje?
-                  </button>
-                </h2>
-                <div id="faq4" class="accordion-collapse collapse" aria-labelledby="faq4-heading" data-bs-parent="#faqAccordion">
-                  <div class="accordion-body">
-                    Una sesión de maquillaje social suele durar entre 60 y 90 minutos, dependiendo del look y los detalles que desees. Para novias, la sesión puede tomar hasta 2 horas, ya que incluye prueba, preparación de piel y retoques finales. Las clases de automaquillaje tienen una duración aproximada de 2 horas.
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="faq5-heading">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5" aria-expanded="false" aria-controls="faq5">
-                    ¿Qué incluye una clase de automaquillaje?
-                  </button>
-                </h2>
-                <div id="faq5" class="accordion-collapse collapse" aria-labelledby="faq5-heading" data-bs-parent="#faqAccordion">
-                  <div class="accordion-body">
-                    Las clases de automaquillaje son personalizadas y prácticas. Aprenderás técnicas adaptadas a tu tipo de rostro, selección de productos, herramientas, preparación de piel, corrección de imperfecciones, aplicación de base, contorno, ojos, labios y fijación. Incluye asesoría sobre tu propio kit y recomendaciones para mejorar tu rutina.
-                  </div>
-                </div>
-              </div>
-              <!-- FAQ ampliadas -->
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="faq6-heading">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6" aria-expanded="false" aria-controls="faq6">
-                    ¿El maquillaje incluye pestañas postizas?
-                  </button>
-                </h2>
-                <div id="faq6" class="accordion-collapse collapse" aria-labelledby="faq6-heading" data-bs-parent="#faqAccordion">
-                  <div class="accordion-body">
-                    Sí, todos los servicios de maquillaje social y de novia incluyen la aplicación de pestañas postizas de alta calidad, adaptadas a tu estilo y comodidad. Si prefieres no usarlas, ¡avísame!
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="faq7-heading">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq7" aria-expanded="false" aria-controls="faq7">
-                    ¿Cómo puedo reservar y pagar mi cita?
-                  </button>
-                </h2>
-                <div id="faq7" class="accordion-collapse collapse" aria-labelledby="faq7-heading" data-bs-parent="#faqAccordion">
-                  <div class="accordion-body">
-                    Puedes reservar tu cita a través del formulario de contacto, WhatsApp o Instagram. Para asegurar tu lugar, se solicita un anticipo vía transferencia bancaria o depósito. El resto se liquida el día del servicio.
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="faq8-heading">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq8" aria-expanded="false" aria-controls="faq8">
-                    ¿Qué pasa si necesito cancelar o reagendar?
-                  </button>
-                </h2>
-                <div id="faq8" class="accordion-collapse collapse" aria-labelledby="faq8-heading" data-bs-parent="#faqAccordion">
-                  <div class="accordion-body">
-                    Si necesitas cancelar o cambiar la fecha de tu cita, avísame con al menos 48 horas de anticipación para reprogramar sin costo. El anticipo no es reembolsable en caso de cancelación sin aviso previo.
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="faq9-heading">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq9" aria-expanded="false" aria-controls="faq9">
-                    ¿Realizas maquillaje para grupos o eventos?
-                  </button>
-                </h2>
-                <div id="faq9" class="accordion-collapse collapse" aria-labelledby="faq9-heading" data-bs-parent="#faqAccordion">
-                  <div class="accordion-body">
-                    Sí, maquillo a grupos para bodas, graduaciones, sesiones de fotos y eventos especiales. Solicita una cotización personalizada para grupos y paquetes.
-                  </div>
-                </div>
-              </div>
-            </div>
+  <div class="container">
+    <h2 class="text-center mb-5">Preguntas</h2>
+    <p class="text-center section-desc">Preguntas frecuentes sobre servicios, agenda y políticas.</p>
+    <div class="accordion" id="faqAccordion">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq1-heading">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="false" aria-controls="faq1">
+            ¿Con cuánta anticipación debo agendar mi cita?
+          </button>
+        </h2>
+        <div id="faq1" class="accordion-collapse collapse" aria-labelledby="faq1-heading" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Te recomiendo agendar tu cita al menos 2 semanas antes del evento para asegurar disponibilidad, especialmente en temporada alta (bodas, graduaciones y fiestas). Si tienes una fecha especial, ¡reserva lo antes posible!<br><br>
+            <strong>¿Y si es de último minuto?</strong> Si necesitas un servicio urgente, contáctame por WhatsApp o Instagram. Siempre haré lo posible por adaptarme a tu agenda, incluso en fechas cercanas. Recuerda que los sábados y domingos suelen llenarse rápido.<br><br>
+            <strong>Tip:</strong> Para novias, lo ideal es reservar con 2-3 meses de anticipación para asegurar tu prueba y el día del evento.
           </div>
-        </section>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq2-heading">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+            ¿Qué productos utilizas para el maquillaje?
+          </button>
+        </h2>
+        <div id="faq2" class="accordion-collapse collapse" aria-labelledby="faq2-heading" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Utilizo productos profesionales de marcas reconocidas como MAC, NARS, Urban Decay, Too Faced, Kryolan y Anastasia Beverly Hills, entre otras. Todos los productos son de alta duración, resistentes al sudor y las lágrimas, y adecuados para todo tipo de piel, incluso pieles sensibles.<br><br>
+            <strong>Higiene y seguridad:</strong> Cada brocha y herramienta se desinfecta antes de cada clienta. Uso productos hipoalergénicos y siempre pregunto por alergias o preferencias.<br><br>
+            <strong>Personalización:</strong> El maquillaje se adapta a tu tipo de piel, tono y estilo deseado, para lograr un acabado natural, elegante o glam según tu evento.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq3-heading">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+            ¿Ofreces servicio a domicilio?
+          </button>
+        </h2>
+        <div id="faq3" class="accordion-collapse collapse" aria-labelledby="faq3-heading" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Sí, ofrezco servicio a domicilio en Ciudad de México y áreas cercanas (consultar cobertura). El costo adicional depende de la distancia y la zona, y se cotiza al momento de agendar.<br><br>
+            <strong>¿Qué incluye el servicio a domicilio?</strong> Llevo todo el material profesional necesario: luces, brochas y productos. Solo necesito un espacio cómodo, sillas, espejos y buena iluminación natural.<br><br>
+            <strong>Ideal para:</strong> Bodas, sesiones de fotos, eventos en casa, hoteles o salones. ¡Tú solo relájate y disfruta la experiencia!
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq4-heading">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
+            ¿Cuánto dura una sesión de maquillaje?
+          </button>
+        </h2>
+        <div id="faq4" class="accordion-collapse collapse" aria-labelledby="faq4-heading" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            <strong>Maquillaje social:</strong> Entre 60 y 90 minutos, dependiendo del look, tipo de piel y si deseas peinado adicional.<br>
+            <strong>Novias:</strong> Hasta 2 horas, ya que incluye prueba previa, preparación de piel, aplicación de pestañas premium y retoques finales.<br>
+            <strong>Clases de automaquillaje:</strong> Aproximadamente 2 horas, con tiempo para práctica, preguntas y asesoría personalizada.<br><br>
+            <strong>Tip:</strong> Llega con el rostro limpio y sin maquillaje para aprovechar al máximo tu sesión.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq5-heading">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5" aria-expanded="false" aria-controls="faq5">
+            ¿Qué incluye una clase de automaquillaje?
+          </button>
+        </h2>
+        <div id="faq5" class="accordion-collapse collapse" aria-labelledby="faq5-heading" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Las clases son 100% personalizadas y prácticas. Aprenderás técnicas adaptadas a tu tipo de rostro, selección de productos, herramientas, preparación de piel, corrección de imperfecciones, aplicación de base, contorno, ojos, labios y fijación.<br><br>
+            <strong>Incluye:</strong>
+            <ul>
+              <li>Diagnóstico de tu tipo de piel y recomendaciones de productos.</li>
+              <li>Revisión y asesoría sobre tu propio kit de maquillaje.</li>
+              <li>Material de apoyo digital con tips y pasos clave.</li>
+              <li>Práctica guiada paso a paso y resolución de dudas.</li>
+            </ul>
+            <strong>Objetivo:</strong> Que te sientas segura y capaz de crear looks para tu día a día o eventos especiales.
+          </div>
+        </div>
+      </div>
+      <!-- FAQ ampliadas -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq6-heading">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6" aria-expanded="false" aria-controls="faq6">
+            ¿El maquillaje incluye pestañas postizas?
+          </button>
+        </h2>
+        <div id="faq6" class="accordion-collapse collapse" aria-labelledby="faq6-heading" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Sí, todos los servicios de maquillaje social y de novia incluyen la aplicación de pestañas postizas de alta calidad, adaptadas a tu estilo y comodidad.<br><br>
+            <strong>¿Puedo elegir el tipo de pestaña?</strong> ¡Por supuesto! Tengo opciones naturales, dramáticas y premium. Si prefieres no usarlas, solo avísame.<br><br>
+            <strong>Tip:</strong> Las pestañas postizas realzan la mirada y hacen que el maquillaje luzca más profesional en fotos y eventos.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq7-heading">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq7" aria-expanded="false" aria-controls="faq7">
+            ¿Cómo puedo reservar y pagar mi cita?
+          </button>
+        </h2>
+        <div id="faq7" class="accordion-collapse collapse" aria-labelledby="faq7-heading" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Puedes reservar tu cita a través del menu Agendar, WhatsApp o Instagram. Para asegurar tu lugar, se solicita un anticipo vía transferencia bancaria o depósito, y el resto se liquida el día del servicio.<br><br>
+            <strong>Métodos de pago aceptados:</strong> Transferencia bancaria, efectivo y depósitos. Si necesitas factura, házmelo saber al momento de reservar.<br><br>
+            <strong>Tip:</strong> Agenda con anticipación para elegir el horario que más te convenga y asegurar tu lugar, especialmente en fines de semana.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq8-heading">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq8" aria-expanded="false" aria-controls="faq8">
+            ¿Qué pasa si necesito cancelar o reagendar?
+          </button>
+        </h2>
+        <div id="faq8" class="accordion-collapse collapse" aria-labelledby="faq8-heading" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Si necesitas cancelar o cambiar la fecha de tu cita, avísame con al menos 48 horas de anticipación para reprogramar sin costo. El anticipo no es reembolsable en caso de cancelación; sin embargo, podrás utilizarlo en futuros servicios.<br><br>
+            <strong>¿Por qué se solicita anticipo?</strong> El anticipo asegura tu lugar y permite organizar la agenda de manera eficiente. Si surge un imprevisto, siempre busco opciones para reprogramar tu cita.<br><br>
+            <strong>Tip:</strong> Si tienes dudas sobre la política de cancelación, no dudes en contactarme antes de reservar.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq9-heading">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq9" aria-expanded="false" aria-controls="faq9">
+            ¿Realizas maquillaje para grupos o eventos?
+          </button>
+        </h2>
+        <div id="faq9" class="accordion-collapse collapse" aria-labelledby="faq9-heading" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Sí, maquillo a grupos para bodas, graduaciones, sesiones de fotos y eventos especiales.<br><br>
+            <strong>¿Cómo funciona?</strong> Puedes solicitar una cotización personalizada para grupos, paquetes familiares o amigas. El servicio se adapta al número de personas, horarios y necesidades específicas.<br><br>
+            <strong>Tip:</strong> Reservar en grupo puede tener beneficios y descuentos especiales. ¡Pregunta por promociones vigentes!
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
         <!-- 8. Contacto -->
         <section id="contacto" class="py-5 text-center bg-light" data-aos="fade-up">
             <div class="container">
                 <h2 class="mb-4 text-center">Contacto</h2>
-                <p class="lead mb-4">Sígueme en mis redes sociales o envíame un correo o whatsapp para cualquier consulta.</p>
+                <p class="lead mb-4 section-desc">Sígueme en redes sociales o envíame un correo o WhatsApp para cualquier consulta.</p>
                 <p>
                     <a href="https://www.instagram.com/beautylab_mx_" class="text-body mx-2" target="_blank" rel="noopener noreferrer" aria-label="Visita el perfil de Beauty Lab en Instagram">Instagram</a> |
                     <a href="https://www.facebook.com/jaqueeliinee.briito/" class="text-body mx-2" target="_blank" rel="noopener noreferrer" aria-label="Visita el perfil de Beauty Lab en Facebook">Facebook</a> |
@@ -679,26 +751,6 @@
         "@type": "ServiceChannel",
         "serviceUrl": "https://www.tu-dominio.com/"
       }
-    }
-    </script>
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Review",
-      "itemReviewed": {
-        "@type": "Service",
-        "name": "Maquillaje profesional"
-      },
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": "5",
-        "bestRating": "5"
-      },
-      "author": {
-        "@type": "Person",
-        "name": "Sofía L."
-      },
-      "reviewBody": "¡El maquillaje fue espectacular! Duró toda la noche y recibí muchísimos cumplidos. Jacky es una verdadera profesional y muy talentosa."
     }
     </script>
     <!-- Carga diferida de scripts no críticos ya está implementada con defer en Bootstrap y AOS -->
