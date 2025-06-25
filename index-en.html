@@ -56,7 +56,7 @@
         width: 56px;
         height: 56px;
         bottom: 24px;
-        right: 24px;
+        left: 24px;
         z-index: 9999;
         background: #25d366;
         border-radius: 50%;
@@ -71,6 +71,14 @@
     }
     .whatsapp-float img {
         filter: invert(1) brightness(2);
+    }
+    @media (max-width: 600px) {
+      .whatsapp-float {
+        width: 44px;
+        height: 44px;
+        left: 12px;
+        bottom: 16px;
+      }
     }
     </style>
     <!-- Navbar -->
@@ -593,56 +601,118 @@
         <script>
           AOS.init({ duration: 900, once: true });
         </script>
-        <button id="btn-top" aria-label="Back to top" title="Back to top">↑</button>
+    <!-- Botón Back to Top -->
+    <button id="btn-top" aria-label="Back to top" title="Back to top">
+      <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:block;margin:auto;">
+        <circle cx="14" cy="14" r="13" stroke="#D4AF37" stroke-width="2" fill="#fff"/>
+        <path d="M14 20V8" stroke="#D4AF37" stroke-width="2" stroke-linecap="round"/>
+        <path d="M9 13L14 8L19 13" stroke="#D4AF37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+    <style>
+    #btn-top {
+      position: fixed;
+      right: 24px;
+      bottom: 32px;
+      width: 56px;
+      height: 56px;
+      background: #fff;
+      border: none;
+      border-radius: 50%;
+      box-shadow: 0 4px 18px rgba(33,37,41,0.18), 0 1.5px 6px rgba(212,175,55,0.10);
+      color: var(--color-accent);
+      z-index: 99998;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      transition: box-shadow 0.2s, background 0.2s, transform 0.2s, opacity 0.3s;
+      opacity: 0.92;
+      cursor: pointer;
+      padding: 0;
+    }
+    #btn-top:focus {
+      outline: 2px solid var(--color-accent);
+      outline-offset: 2px;
+      background: #fffbe7;
+      opacity: 1;
+    }
+    #btn-top:hover {
+      background: #fffbe7;
+      box-shadow: 0 8px 32px rgba(212,175,55,0.18), 0 2px 8px rgba(33,37,41,0.13);
+      transform: translateY(-3px) scale(1.07);
+      opacity: 1;
+    }
+    #btn-top svg {
+      display: block;
+      margin: auto;
+    }
+    @media (max-width: 600px) {
+      #btn-top {
+        width: 44px;
+        height: 44px;
+        right: 12px;
+        bottom: 16px;
+      }
+      #btn-top svg {
+        width: 22px;
+        height: 22px;
+      }
+    }
+    </style>
+    <script>
+      // Show/hide Back to Top button
+      window.addEventListener('scroll', function() {
+        const btn = document.getElementById('btn-top');
+        if (window.scrollY > 300) {
+          btn.style.display = 'flex';
+        } else {
+          btn.style.display = 'none';
+        }
+      });
+      document.getElementById('btn-top').onclick = function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      };
+    </script>
         <script>
-          window.addEventListener('scroll', function() {
-            const btn = document.getElementById('btn-top');
-            if (window.scrollY > 300) {
-              btn.style.display = 'flex';
-            } else {
-              btn.style.display = 'none';
-            }
-          });
-          document.getElementById('btn-top').onclick = function() {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-          };
-        </script>
-        <script>
-        window.addEventListener('scroll', function() {
-          const nav = document.getElementById('mainNavbar');
-          if(window.scrollY > 30) {
-            nav.classList.add('shadow');
-          } else {
-            nav.classList.remove('shadow');
-          }
-        });
-        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
-        tooltipTriggerList.map(function (tooltipTriggerEl) {
-          return new bootstrap.Tooltip(tooltipTriggerEl);
-        });
-        const navLinks = document.querySelectorAll('.navbar-nav .nav-link, .btn, .card');
-        navLinks.forEach(function(link) {
-          link.addEventListener('focus', function() {
-            this.style.outline = '2px solid #86b7fe';
-            this.style.background = '#f8f9fa';
-            this.style.color = '#212529';
-          });
-          link.addEventListener('blur', function() {
-            this.style.outline = '';
-            this.style.background = '';
-            this.style.color = '';
-          });
-        });
-        const allInteractive = document.querySelectorAll('a, button, input, select, textarea, .card');
-        allInteractive.forEach(function(el) {
-          el.addEventListener('focus', function() {
-            this.classList.add('focus-visible');
-          });
-          el.addEventListener('blur', function() {
-            this.classList.remove('focus-visible');
-          });
-        });
-        </script>
+    // Navbar shadow on scroll
+    window.addEventListener('scroll', function() {
+      const nav = document.getElementById('mainNavbar');
+      if(window.scrollY > 30) {
+        nav.classList.add('shadow');
+      } else {
+        nav.classList.remove('shadow');
+      }
+    });
+    // Tooltip WhatsApp
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+    tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl);
+    });
+    // Accessibility: visual feedback on focus for links, buttons, cards
+    const navLinks = document.querySelectorAll('.navbar-nav .nav-link, .btn, .card');
+    navLinks.forEach(function(link) {
+      link.addEventListener('focus', function() {
+        this.style.outline = '2px solid #86b7fe';
+        this.style.background = '#f8f9fa';
+        this.style.color = '#212529';
+      });
+      link.addEventListener('blur', function() {
+        this.style.outline = '';
+        this.style.background = '';
+        this.style.color = '';
+      });
+    });
+    // Keyboard navigation visible on all interactive elements
+    const allInteractive = document.querySelectorAll('a, button, input, select, textarea, .card');
+    allInteractive.forEach(function(el) {
+      el.addEventListener('focus', function() {
+        this.classList.add('focus-visible');
+      });
+      el.addEventListener('blur', function() {
+        this.classList.remove('focus-visible');
+      });
+    });
+    </script>
         <script>
           document.addEventListener('DOMContentLoaded', function() {
             var hero = document.querySelector('.hero-section h1');
