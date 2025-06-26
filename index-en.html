@@ -6,10 +6,26 @@
     <title>Beauty Lab - Professional Makeup Artist</title>
     <!-- SEO Meta Tags -->
     <meta name="description" content="Professional makeup services in Mexico City. Specialist in bridal makeup, social events, and self-makeup classes. Book your appointment and enhance your beauty!">
-    <meta name="keywords" content="makeup artist, professional makeup, brides, weddings, events, self-makeup, beauty lab">
+    <meta name="keywords" content="makeup artist, professional makeup, brides, weddings, events, self-makeup, beauty lab, makeup CDMX, bridal makeup, social makeup, makeup classes, home makeup, professional makeup CDMX, event makeup, wedding makeup, party makeup, graduation makeup, photoshoot makeup, editorial makeup, beauty lab cdmx, beauty lab mexico, beauty lab jacky brito">
     <meta name="robots" content="index, follow">
+    <meta name="author" content="Jacky Brito">
+    <meta name="theme-color" content="#D4AF37">
+    <link rel="canonical" href="https://jackybrito.github.io/BeautyLab/index-en.html" />
     <link rel="alternate" hreflang="en" href="https://jackybrito.github.io/BeautyLab/index-en.html" />
     <link rel="alternate" hreflang="es" href="https://jackybrito.github.io/BeautyLab/index.html" />
+    <!-- Breadcrumbs JSON-LD for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://jackybrito.github.io/BeautyLab/"},
+        {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://jackybrito.github.io/BeautyLab/index-en.html#services"},
+        {"@type": "ListItem", "position": 3, "name": "Gallery", "item": "https://jackybrito.github.io/BeautyLab/index-en.html#gallery"},
+        {"@type": "ListItem", "position": 4, "name": "Contact", "item": "https://jackybrito.github.io/BeautyLab/index-en.html#contact"}
+      ]
+    }
+    </script>
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -34,21 +50,35 @@
     <meta property="og:title" content="Beauty Lab - Professional Makeup Artist">
     <meta property="og:description" content="Makeup services for weddings, events, and personalized classes.">
     <meta property="og:image" content="https://jackybrito.github.io/BeautyLab/images/og-image.jpeg">
+    <meta property="og:image:alt" content="Professional makeup artist in CDMX, Beauty Lab, bridal and event makeup">
     <meta property="og:url" content="https://jackybrito.github.io/BeautyLab/index-en.html">
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Beauty Lab - Professional Makeup Artist">
+    <meta name="twitter:description" content="Makeup services for weddings, events, and personalized classes.">
+    <meta name="twitter:image" content="https://jackybrito.github.io/BeautyLab/images/og-image.jpeg">
+    <meta name="twitter:site" content="@beautylab_mx_">
+    <!-- Favicons for different devices -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/lipstick.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/lipstick.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/lipstick.png">
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- AOS Animation CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="images/lipstick.png">
 </head>
 <body data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-offset="70">
+
     <!-- WhatsApp Floating Button -->
     <a href="https://wa.me/5212299783211?text=Hi%20Jacky%2C%20I%20want%20to%20book%20a%20makeup%20appointment" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp" data-bs-toggle="tooltip" data-bs-placement="left" title="Chat now!">
-        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="WhatsApp" style="width:28px;height:28px;display:block;margin:auto;" />
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="WhatsApp" style="width:18px;height:18px;display:block;margin:auto;" />
     </a>
     <style>
     .whatsapp-float {
@@ -72,8 +102,8 @@
     }
     .whatsapp-float img {
         filter: invert(1) brightness(2);
-        width: 28px;
-        height: 28px;
+        width: 18px;
+        height: 18px;
         display: block;
         margin: auto;
     }
@@ -85,11 +115,12 @@
         bottom: 16px;
       }
       .whatsapp-float img {
-        width: 22px;
-        height: 22px;
+        width: 13px;
+        height: 13px;
       }
     }
     </style>
+
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top bg-dark" id="mainNavbar" role="navigation" aria-label="Main navigation bar">
         <div class="container">
@@ -112,7 +143,7 @@
                     <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                     <li class="nav-item ms-lg-3">
-                        <a class="btn btn-outline-light d-flex align-items-center px-3 py-1" href="index.html" lang="es" hreflang="es" aria-label="Cambiar a versión en español" style="font-weight:500; border-radius: 2rem; background:rgba(255,255,255,0.08);">
+                        <a class="btn btn-outline-light d-flex align-items-center px-3 py-1" href="index.html" lang="es" hreflang="es" aria-label="Switch to Spanish version" style="font-weight:500; border-radius: 2rem; background:rgba(255,255,255,0.08);">
                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" focusable="false" style="margin-right:6px;">
                               <circle cx="12" cy="12" r="10" stroke="#0d6efd" stroke-width="2" fill="none"/>
                               <ellipse cx="12" cy="12" rx="7" ry="10" stroke="#0d6efd" stroke-width="1.5" fill="none"/>
@@ -127,6 +158,7 @@
             </div>
         </div>
     </nav>
+
     <main>
         <!-- Hero Section -->
         <section class="hero-section text-white text-center d-flex align-items-center" data-aos="fade-up">
@@ -136,6 +168,7 @@
                 <a href="https://calendly.com/jacky-brito97/agendar" class="btn btn-outline-light btn-lg mt-3" target="_blank" rel="noopener noreferrer">Book your appointment</a>
             </div>
         </section>
+
         <!-- About Me -->
         <section id="about" class="py-5" data-aos="fade-up">
             <div class="container">
@@ -151,126 +184,138 @@
                 </div>
             </div>
         </section>
+
         <!-- Services -->
         <section id="services" class="py-5" data-aos="fade-up">
-  <div class="container">
-    <h2 class="text-center mb-5">Services</h2>
-    <p class="text-center section-desc">Bridal, social, and self-makeup classes. Enhance your beauty for any event.</p>
-    <div class="row">
-      <div class="col-6 col-md-4 col-lg-4 mb-4">
-        <div class="card h-100 text-center">
-          <img src="images/service-social.jpeg" class="card-img-top" alt="Social Makeup" loading="lazy" data-bs-toggle="modal" data-bs-target="#modalSocialEN" style="cursor:pointer;">
-          <div class="card-body p-2">
-            <h3 class="card-title" style="font-size:1.1rem;">Social Makeup</h3>
-            <p class="card-text" style="font-size:0.97rem;">Perfect for parties, graduations, or any event where you want to look radiant.</p>
-            <button type="button" class="btn btn-outline-primary mt-2" data-bs-toggle="modal" data-bs-target="#modalSocialEN">More info</button>
+            <div class="container">
+                <h2 class="text-center mb-5">Services</h2>
+                <p class="text-center section-desc text-white" style="font-weight:500;">Bridal, social, and self-makeup classes. Enhance your beauty for any event.</p>
+                <div class="row">
+                    <!-- Service 1 -->
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="card h-100 text-center">
+                            <img src="images/service-social.jpeg" class="card-img-top" alt="Social Makeup" loading="lazy" data-bs-toggle="modal" data-bs-target="#modalSocial" style="cursor:pointer;">
+                            <div class="card-body p-2">
+                                <h3 class="card-title" style="font-size:1.1rem;">Social Makeup</h3>
+                                <p class="card-text" style="font-size:0.97rem;">Perfect for parties, graduations, or any event where you want to look radiant.</p>
+                                <button class="btn btn-outline-primary mt-2" data-bs-toggle="modal" data-bs-target="#modalSocial">More info</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Service 2 -->
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="card h-100 text-center">
+                            <img src="images/service-bride.jpeg" class="card-img-top" alt="Bridal Makeup" loading="lazy" data-bs-toggle="modal" data-bs-target="#modalBride" style="cursor:pointer;">
+                            <div class="card-body p-2">
+                                <h3 class="card-title" style="font-size:1.1rem;">Bridal Makeup</h3>
+                                <p class="card-text" style="font-size:0.97rem;">A complete and personalized service so you shine on your big day.</p>
+                                <button class="btn btn-outline-success mt-2" data-bs-toggle="modal" data-bs-target="#modalBride">More info</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Service 3 -->
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="card h-100 text-center">
+                            <img src="images/service-class.png" class="card-img-top" alt="Self-Makeup Classes" loading="lazy" data-bs-toggle="modal" data-bs-target="#modalClass" style="cursor:pointer;">
+                            <div class="card-body p-2">
+                                <h3 class="card-title" style="font-size:1.1rem;">Self-Makeup Classes</h3>
+                                <p class="card-text" style="font-size:0.97rem;">Learn to do your makeup like a pro and make the most of your features.</p>
+                                <button class="btn btn-outline-warning mt-2" data-bs-toggle="modal" data-bs-target="#modalClass">More info</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service Modals -->
+        <div class="modal fade" id="modalSocial" tabindex="-1" aria-labelledby="modalSocialLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalSocialLabel">Social Makeup</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <ul class="list-unstyled mb-3">
+                  <li>From <strong>$1,200 MXN (~$70 USD)</strong></li>
+                  <li>Professional skin preparation</li>
+                  <li>Personalized makeup</li>
+                  <li>False eyelashes included</li>
+                </ul>
+                <p class="text-muted mb-1" style="font-size:0.95rem;">*Reference prices. Costs may vary depending on requirements, location, and number of people. Request your personalized quote.<br>USD prices are approximate and may vary according to the exchange rate.</p>
+                <a href="https://calendly.com/jacky-brito97/agendar" class="btn btn-primary mt-3" target="_blank" rel="noopener noreferrer">Book</a>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-6 col-md-4 col-lg-4 mb-4">
-        <div class="card h-100 text-center">
-          <img src="images/service-bride.jpeg" class="card-img-top" alt="Bridal Makeup" loading="lazy" data-bs-toggle="modal" data-bs-target="#modalBrideEN" style="cursor:pointer;">
-          <div class="card-body p-2">
-            <h3 class="card-title" style="font-size:1.1rem;">Bridal Makeup</h3>
-            <p class="card-text" style="font-size:0.97rem;">A complete and personalized service so you shine on your big day.</p>
-            <button type="button" class="btn btn-outline-success mt-2" data-bs-toggle="modal" data-bs-target="#modalBrideEN">More info</button>
+        <div class="modal fade" id="modalBride" tabindex="-1" aria-labelledby="modalBrideLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalBrideLabel">Bridal Makeup</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <ul class="list-unstyled mb-3">
+                  <li>Package from <strong>$4,000 MXN (~$235 USD)</strong></li>
+                  <li>Makeup trial</li>
+                  <li>Makeup on the event day</li>
+                  <li>Premium false eyelashes</li>
+                  <li>Final touch-up</li>
+                </ul>
+                <p class="text-muted mb-1" style="font-size:0.95rem;">*Reference prices. Costs may vary depending on requirements, location, and number of people. Request your personalized quote.<br>USD prices are approximate and may vary according to the exchange rate.</p>
+                <a href="https://calendly.com/jacky-brito97/agendar" class="btn btn-success mt-3" target="_blank" rel="noopener noreferrer">Book</a>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-6 col-md-4 col-lg-4 mb-4">
-        <div class="card h-100 text-center">
-          <img src="images/service-class.png" class="card-img-top" alt="Self-Makeup Classes" loading="lazy" data-bs-toggle="modal" data-bs-target="#modalClassEN" style="cursor:pointer;">
-          <div class="card-body p-2">
-            <h3 class="card-title" style="font-size:1.1rem;">Self-Makeup Classes</h3>
-            <p class="card-text" style="font-size:0.97rem;">Learn to do your makeup like a pro and make the most of your features.</p>
-            <button type="button" class="btn btn-outline-warning mt-2" data-bs-toggle="modal" data-bs-target="#modalClassEN">More info</button>
+        <div class="modal fade" id="modalClass" tabindex="-1" aria-labelledby="modalClassLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalClassLabel">Self-Makeup Classes</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <ul class="list-unstyled mb-3">
+                  <li>From <strong>$1,500 MXN (~$88 USD)</strong></li>
+                  <li>Personalized class (2 hrs)</li>
+                  <li>Digital support material</li>
+                  <li>Advice on your kit</li>
+                </ul>
+                <p class="text-muted mb-1" style="font-size:0.95rem;">*Reference prices. Costs may vary depending on requirements, location, and number of people. Request your personalized quote.<br>USD prices are approximate and may vary according to the exchange rate.</p>
+                <a href="https://calendly.com/jacky-brito97/agendar" class="btn btn-warning mt-3" target="_blank" rel="noopener noreferrer">Book</a>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-    <!-- Modals for prices -->
-    <div class="modal fade" id="modalSocialEN" tabindex="-1" aria-labelledby="modalSocialENLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="modalSocialENLabel">Social Makeup</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <ul class="list-unstyled mb-3">
-              <li>From <strong>$1,200 MXN (~$70 USD)</strong></li>
-              <li>Professional skin preparation</li>
-              <li>Personalized makeup</li>
-              <li>False eyelashes included</li>
-            </ul>
-            <p class="text-muted mb-1" style="font-size:0.95rem;">*Reference prices. Costs may vary depending on requirements, location, and number of people. Request your personalized quote.<br>USD prices are approximate and may vary according to the exchange rate.</p>
-            <a href="https://calendly.com/jacky-brito97/agendar" class="btn btn-primary mt-3" target="_blank" rel="noopener noreferrer">Book</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="modalBrideEN" tabindex="-1" aria-labelledby="modalBrideENLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="modalBrideENLabel">Bridal Makeup</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <ul class="list-unstyled mb-3">
-              <li>Package from <strong>$4,000 MXN (~$235 USD)</strong></li>
-              <li>Makeup trial</li>
-              <li>Makeup on the event day</li>
-              <li>Premium false eyelashes</li>
-              <li>Final touch-up</li>
-            </ul>
-            <p class="text-muted mb-1" style="font-size:0.95rem;">*Reference prices. Costs may vary depending on requirements, location, and number of people. Request your personalized quote.<br>USD prices are approximate and may vary according to the exchange rate.</p>
-            <a href="https://calendly.com/jacky-brito97/agendar" class="btn btn-success mt-3" target="_blank" rel="noopener noreferrer">Book</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="modalClassEN" tabindex="-1" aria-labelledby="modalClassENLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="modalClassENLabel">Self-Makeup Classes</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <ul class="list-unstyled mb-3">
-              <li>From <strong>$1,500 MXN (~$88 USD)</strong></li>
-              <li>Personalized class (2 hrs)</li>
-              <li>Digital support material</li>
-              <li>Advice on your kit</li>
-            </ul>
-            <p class="text-muted mb-1" style="font-size:0.95rem;">*Reference prices. Costs may vary depending on requirements, location, and number of people. Request your personalized quote.<br>USD prices are approximate and may vary according to the exchange rate.</p>
-            <a href="https://calendly.com/jacky-brito97/agendar" class="btn btn-warning mt-3" target="_blank" rel="noopener noreferrer">Book</a>
-          </div>
-        </div>
-      </div>
-    </div>
+
         <!-- Gallery -->
         <section id="gallery" class="py-5" data-aos="fade-up">
             <div class="container">
                 <h2 class="text-center mb-5">Gallery</h2>
                 <p class="text-center section-desc">Before and after, event looks, and creative makeup. See real results!</p>
                 <div class="row">
+                    <!-- Image 1 with Lightbox -->
                     <div class="col-6 col-md-4 col-lg-3 mb-4">
                         <a href="#" data-bs-toggle="modal" data-bs-target="#galleryModal1" aria-label="View enlarged image: No Makeup">
                             <img src="images/gallery-1.png" class="img-fluid" alt="Face of a woman without makeup, before the session." loading="lazy">
                         </a>
                     </div>
+                    <!-- Image 2 with Lightbox -->
                     <div class="col-6 col-md-4 col-lg-3 mb-4">
                         <a href="#" data-bs-toggle="modal" data-bs-target="#galleryModal2" aria-label="View enlarged image: Elegant Look">
                             <img src="images/gallery-2.png" class="img-fluid" alt="Night look with smoky eyes and luminous skin." loading="lazy">
                         </a>
                     </div>
+                    <!-- Image 3 with Lightbox -->
                     <div class="col-6 col-md-4 col-lg-3 mb-4">
                         <a href="#" data-bs-toggle="modal" data-bs-target="#galleryModal3" aria-label="View enlarged image: Colorful Look">
                             <img src="images/gallery-3.png" class="img-fluid" alt="Colorful look with vibrant lips and radiant skin." loading="lazy">
                         </a>
                     </div>
+                    <!-- Image 4 with Lightbox -->
                     <div class="col-6 col-md-4 col-lg-3 mb-4">
                         <a href="#" data-bs-toggle="modal" data-bs-target="#galleryModal4" aria-label="View enlarged image: Bold Look">
                             <img src="images/gallery-4.png" class="img-fluid" alt="Bold look with green eyes and radiant skin." loading="lazy">
@@ -279,89 +324,91 @@
                 </div>
             </div>
         </section>
-        <!-- 6. Tips Section (Carousel, like Spanish version) -->
-    <section id="blog" class="py-5 bg-white" data-aos="fade-up">
-      <div class="container">
-        <h2 class="text-center mb-5">Tips</h2>
-        <p class="text-center section-desc">Makeup tips, tricks, and tutorials to get the most out of your look.</p>
-        <div>
-          <div id="tipsCarouselEN" class="carousel slide" data-bs-ride="carousel" aria-label="Makeup tips">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#tipsCarouselEN" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Tip 1"></button>
-              <button type="button" data-bs-target="#tipsCarouselEN" data-bs-slide-to="1" aria-label="Tip 2"></button>
-              <button type="button" data-bs-target="#tipsCarouselEN" data-bs-slide-to="2" aria-label="Tip 3"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <a href="#tipModal1EN" data-bs-toggle="modal" aria-label="View tip: Makeup longevity">
-                  <img src="images/tip-1.png" class="img-fluid rounded shadow-sm mx-auto d-block" alt="Tip: Makeup longevity" style="max-height:600px;">
-                </a>
-              </div>
-              <div class="carousel-item">
-                <a href="#tipModal2EN" data-bs-toggle="modal" aria-label="View tip: Natural and radiant look">
-                  <img src="images/tip-2.png" class="img-fluid rounded shadow-sm mx-auto d-block" alt="Tip: Natural makeup" style="max-height:600px;">
-                </a>
-              </div>
-              <div class="carousel-item">
-                <a href="#tipModal3EN" data-bs-toggle="modal" aria-label="View tip: Prevent eyeliner smudging">
-                  <img src="images/tip-3.png" class="img-fluid rounded shadow-sm mx-auto d-block" alt="Tip: Eyeliner care" style="max-height:600px;">
-                </a>
-              </div>
-            </div>
-          </div>
+
+        <!-- Tips Section -->
+        <section id="blog" class="py-5 bg-white" data-aos="fade-up">
+  <div class="container">
+    <h2 class="text-center mb-5">Tips</h2>
+    <p class="text-center section-desc">Tips, tricks, and makeup tutorials to get the most out of your look.</p>
+    <div>
+      <div id="tipsCarousel" class="carousel slide" data-bs-ride="carousel" aria-label="Makeup tips">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#tipsCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Tip 1"></button>
+          <button type="button" data-bs-target="#tipsCarousel" data-bs-slide-to="1" aria-label="Tip 2"></button>
+          <button type="button" data-bs-target="#tipsCarousel" data-bs-slide-to="2" aria-label="Tip 3"></button>
         </div>
-      </div>
-    </section>
-    <!-- Modals for tips -->
-    <div class="modal fade" id="tipModal1EN" tabindex="-1" aria-labelledby="tipModalLabel1EN" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content bg-dark">
-          <div class="modal-header border-0">
-            <h5 class="modal-title text-white" id="tipModalLabel1EN">How to make your makeup last longer?</h5>
-            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <a href="#tipModal1" data-bs-toggle="modal" aria-label="View tip: Makeup longevity">
+              <img src="images/tip-1.png" class="img-fluid rounded shadow-sm mx-auto d-block" alt="Tip: Makeup longevity" style="max-height:600px;">
+            </a>
           </div>
-          <div class="modal-body p-0 text-center">
-            <img src="images/tip-1.png" class="img-fluid" alt="Tip: Makeup longevity">
+          <div class="carousel-item">
+            <a href="#tipModal2" data-bs-toggle="modal" aria-label="View tip: Natural and radiant look">
+              <img src="images/tip-2.png" class="img-fluid rounded shadow-sm mx-auto d-block" alt="Tip: Natural makeup" style="max-height:600px;">
+            </a>
+          </div>
+          <div class="carousel-item">
+            <a href="#tipModal3" data-bs-toggle="modal" aria-label="View tip: Prevent eyeliner smudging">
+              <img src="images/tip-3.png" class="img-fluid rounded shadow-sm mx-auto d-block" alt="Tip: Eyeliner care" style="max-height:600px;">
+            </a>
           </div>
         </div>
       </div>
     </div>
-    <div class="modal fade" id="tipModal2EN" tabindex="-1" aria-labelledby="tipModalLabel2EN" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content bg-dark">
-          <div class="modal-header border-0">
-            <h5 class="modal-title text-white" id="tipModalLabel2EN">Tricks for a natural and radiant look</h5>
-            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body p-0 text-center">
-            <img src="images/tip-2.png" class="img-fluid" alt="Tip: Natural makeup">
-          </div>
-        </div>
+  </div>
+</section>
+<!-- Modals for tips -->
+<div class="modal fade" id="tipModal1" tabindex="-1" aria-labelledby="tipModalLabel1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content bg-dark">
+      <div class="modal-header border-0">
+        <h5 class="modal-title text-white" id="tipModalLabel1">How to make your makeup last longer?</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body p-0 text-center">
+        <img src="images/tip-1.png" class="img-fluid" alt="Tip: Makeup longevity">
       </div>
     </div>
-    <div class="modal fade" id="tipModal3EN" tabindex="-1" aria-labelledby="tipModalLabel3EN" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content bg-dark">
-          <div class="modal-header border-0">
-            <h5 class="modal-title text-white" id="tipModalLabel3EN">How to prevent eyeliner from smudging?</h5>
-            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body p-0 text-center">
-            <img src="images/tip-3.png" class="img-fluid" alt="Tip: Eyeliner care">
-          </div>
-        </div>
+  </div>
+</div>
+<div class="modal fade" id="tipModal2" tabindex="-1" aria-labelledby="tipModalLabel2" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content bg-dark">
+      <div class="modal-header border-0">
+        <h5 class="modal-title text-white" id="tipModalLabel2">Tricks for a natural and radiant look</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body p-0 text-center">
+        <img src="images/tip-2.png" class="img-fluid" alt="Tip: Natural makeup">
       </div>
     </div>
+  </div>
+</div>
+<div class="modal fade" id="tipModal3" tabindex="-1" aria-labelledby="tipModalLabel3" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content bg-dark">
+      <div class="modal-header border-0">
+        <h5 class="modal-title text-white" id="tipModalLabel3">How to prevent eyeliner from smudging?</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body p-0 text-center">
+        <img src="images/tip-3.png" class="img-fluid" alt="Tip: Eyeliner care">
+      </div>
+    </div>
+  </div>
+</div>
+
         <!-- Testimonials -->
         <section id="testimonials" class="py-5 bg-light" data-aos="fade-up">
             <div class="container">
                 <h2 class="text-center mb-5">Testimonials</h2>
                 <p class="text-center section-desc">What my clients say about their experience with Beauty Lab.</p>
-                <div id="testimonialCarouselEN" class="carousel slide" data-bs-ride="carousel" aria-label="Client testimonials">
+                <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" aria-label="Client testimonials">
                   <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#testimonialCarouselEN" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Testimonial 1"></button>
-                    <button type="button" data-bs-target="#testimonialCarouselEN" data-bs-slide-to="1" aria-label="Testimonial 2"></button>
-                    <button type="button" data-bs-target="#testimonialCarouselEN" data-bs-slide-to="2" aria-label="Testimonial 3"></button>
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Testimonial 1"></button>
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" aria-label="Testimonial 2"></button>
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2" aria-label="Testimonial 3"></button>
                   </div>
                   <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -386,7 +433,7 @@
                 </div>
             </div>
         </section>
-        <!-- FAQ -->
+        <!-- FAQ Section -->
         <section id="faq" class="py-5 bg-white" data-aos="fade-up">
   <div class="container">
     <h2 class="text-center mb-5">FAQ</h2>
@@ -469,6 +516,7 @@
           </div>
         </div>
       </div>
+      <!-- Extended FAQ -->
       <div class="accordion-item">
         <h2 class="accordion-header" id="faq6-heading">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6" aria-expanded="false" aria-controls="faq6">
@@ -528,6 +576,7 @@
     </div>
   </div>
 </section>
+
         <!-- Contact -->
         <section id="contact" class="py-5 text-center bg-light" data-aos="fade-up">
             <div class="container">
@@ -540,8 +589,11 @@
                 </p>
             </div>
         </section>
-        <!-- Footer -->
-        <footer class="bg-dark text-white text-center py-3">
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
       <div class="container">
         <p class="mb-0">Beauty Lab &copy; 2025. All rights reserved. | <a href="privacy-notice.html" class="text-white-50">Privacy Notice</a></p>
         <div class="mt-2">
@@ -551,68 +603,71 @@
         </div>
       </div>
     </footer>
-        <!-- Gallery Modals -->
-        <div class="modal fade" id="galleryModal1" tabindex="-1" aria-labelledby="galleryModalLabel1" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-lg">
-                <div class="modal-content bg-dark">
-                    <div class="modal-header border-0">
-                        <h5 class="modal-title text-white" id="galleryModalLabel1">No Makeup</h5>
-                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body p-0">
-                        <img src="images/gallery-1.png" class="img-fluid" alt="Enlarged view of a woman's face without makeup.">
-                    </div>
+
+    <!-- Gallery Modals -->
+    <div class="modal fade" id="galleryModal1" tabindex="-1" aria-labelledby="galleryModalLabel1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-dark">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title text-white" id="galleryModalLabel1">No Makeup</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-0">
+                    <img src="images/gallery-1.png" class="img-fluid" alt="Enlarged view of a woman's face without makeup.">
+                </div>
+            </div>
+        </div>  
+    </div>
+    <div class="modal fade" id="galleryModal2" tabindex="-1" aria-labelledby="galleryModalLabel2" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-dark">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title text-white" id="galleryModalLabel2">Elegant</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-0">
+                    <img src="images/gallery-2.png" class="img-fluid" alt="Enlarged view of a night look.">
                 </div>
             </div>
         </div>
-        <div class="modal fade" id="galleryModal2" tabindex="-1" aria-labelledby="galleryModalLabel2" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-lg">
-                <div class="modal-content bg-dark">
-                    <div class="modal-header border-0">
-                        <h5 class="modal-title text-white" id="galleryModalLabel2">Elegant</h5>
-                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body p-0">
-                        <img src="images/gallery-2.png" class="img-fluid" alt="Enlarged view of a night look.">
-                    </div>
+    </div>
+    <div class="modal fade" id="galleryModal3" tabindex="-1" aria-labelledby="galleryModalLabel3" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-dark">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title text-white" id="galleryModalLabel3">Colorful</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-0">
+                    <img src="images/gallery-3.png" class="img-fluid" alt="Enlarged view of a colorful look with vibrant lips.">
                 </div>
             </div>
         </div>
-        <div class="modal fade" id="galleryModal3" tabindex="-1" aria-labelledby="galleryModalLabel3" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-lg">
-                <div class="modal-content bg-dark">
-                    <div class="modal-header border-0">
-                        <h5 class="modal-title text-white" id="galleryModalLabel3">Colorful</h5>
-                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body p-0">
-                        <img src="images/gallery-3.png" class="img-fluid" alt="Enlarged view of a colorful look with vibrant lips.">
-                    </div>
+    </div>
+    <div class="modal fade" id="galleryModal4" tabindex="-1" aria-labelledby="galleryModalLabel4" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-dark">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title text-white" id="galleryModalLabel4">Bold</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-0">
+                    <img src="images/gallery-4.png" class="img-fluid" alt="Enlarged view of a bold look with green eyes.">
                 </div>
             </div>
         </div>
-        <div class="modal fade" id="galleryModal4" tabindex="-1" aria-labelledby="galleryModalLabel4" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-lg">
-                <div class="modal-content bg-dark">
-                    <div class="modal-header border-0">
-                        <h5 class="modal-title text-white" id="galleryModalLabel4">Bold</h5>
-                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body p-0">
-                        <img src="images/gallery-4.png" class="img-fluid" alt="Enlarged view of a bold look with green eyes.">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Scripts (Bootstrap, AOS, accessibility, etc.) -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-        <script>
-          AOS.init({ duration: 900, once: true });
-        </script>
-    <!-- Botón Back to Top -->
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- AOS Animation JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({ duration: 900, once: true });
+    </script>
+    <!-- Back to Top Button -->
     <button id="btn-top" aria-label="Back to top" title="Back to top">
-      <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:block;margin:auto;">
+      <svg width="20" height="20" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:block;margin:auto;">
         <circle cx="14" cy="14" r="13" stroke="#D4AF37" stroke-width="2" fill="#fff"/>
         <path d="M14 20V8" stroke="#D4AF37" stroke-width="2" stroke-linecap="round"/>
         <path d="M9 13L14 8L19 13" stroke="#D4AF37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -623,8 +678,8 @@
       position: fixed;
       right: 24px;
       bottom: 32px;
-      width: 56px;
-      height: 56px;
+      width: 40px;
+      height: 40px;
       background: #fff;
       border: none;
       border-radius: 50%;
@@ -654,17 +709,19 @@
     #btn-top svg {
       display: block;
       margin: auto;
+      width: 20px;
+      height: 20px;
     }
     @media (max-width: 600px) {
       #btn-top {
-        width: 44px;
-        height: 44px;
+        width: 32px;
+        height: 32px;
         right: 12px;
         bottom: 16px;
       }
       #btn-top svg {
-        width: 22px;
-        height: 22px;
+        width: 15px;
+        height: 15px;
       }
     }
     </style>
@@ -682,7 +739,7 @@
         window.scrollTo({ top: 0, behavior: 'smooth' });
       };
     </script>
-        <script>
+    <script>
     // Navbar shadow on scroll
     window.addEventListener('scroll', function() {
       const nav = document.getElementById('mainNavbar');
@@ -722,49 +779,54 @@
       });
     });
     </script>
-        <script>
-          document.addEventListener('DOMContentLoaded', function() {
-            var hero = document.querySelector('.hero-section h1');
-            if(hero) hero.setAttribute('tabindex', '0');
-            var sections = document.querySelectorAll('section h2');
-            sections.forEach(function(h2) {
-              h2.setAttribute('tabindex', '0');
-            });
-          });
-        </script>
-        <div id="cookie-banner" style="position:fixed;bottom:0;left:0;width:100%;background:#212529;color:#fff;padding:12px 0;z-index:99999;display:none;">
-          <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between">
-            <span>This site uses cookies to improve your experience. See the <a href="privacy-notice.html" class="text-white-50 text-decoration-underline">privacy policy</a>.</span>
-            <button class="btn btn-outline-light btn-sm mt-2 mt-md-0" onclick="acceptCookies()" aria-label="Accept cookies">Accept</button>
-          </div>
-        </div>
-        <script>
-          function acceptCookies() {
-            document.getElementById('cookie-banner').style.display = 'none';
-            localStorage.setItem('cookiesAccepted', '1');
-          }
-          window.addEventListener('DOMContentLoaded', function() {
-            if(!localStorage.getItem('cookiesAccepted')) {
-              document.getElementById('cookie-banner').style.display = 'block';
-            }
-          });
-        </script>
-        <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@type": "Service",
-          "serviceType": "Professional makeup, Bridal, Self-makeup classes",
-          "provider": {
-            "@type": "Person",
-            "name": "Jacky Brito"
-          },
-          "areaServed": "Mexico City and surroundings",
-          "availableChannel": {
-            "@type": "ServiceChannel",
-            "serviceUrl": "https://jackybrito.github.io/BeautyLab/"
-          }
+    <!-- Accessibility and SEO improvements for main titles -->
+    <script>
+      // Set tabindex for main section titles
+      document.addEventListener('DOMContentLoaded', function() {
+        var hero = document.querySelector('.hero-section h1');
+        if(hero) hero.setAttribute('tabindex', '0');
+        var sections = document.querySelectorAll('section h2');
+        sections.forEach(function(h2) {
+          h2.setAttribute('tabindex', '0');
+        });
+      });
+    </script>
+
+    <!-- Cookie Notice -->
+    <div id="cookie-banner" style="position:fixed;bottom:0;left:0;width:100%;background:#212529;color:#fff;padding:12px 0;z-index:99999;display:none;">
+      <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between">
+        <span>This site uses cookies to improve your experience. See the <a href="privacy-notice.html" class="text-white-50 text-decoration-underline">privacy policy</a>.</span>
+        <button class="btn btn-outline-light btn-sm mt-2 mt-md-0" onclick="acceptCookies()" aria-label="Accept cookies">Accept</button>
+      </div>
+    </div>
+    <script>
+      // Simple cookie notice
+      function acceptCookies() {
+        document.getElementById('cookie-banner').style.display = 'none';
+        localStorage.setItem('cookiesAccepted', '1');
+      }
+      window.addEventListener('DOMContentLoaded', function() {
+        if(!localStorage.getItem('cookiesAccepted')) {
+          document.getElementById('cookie-banner').style.display = 'block';
         }
-        </script>
-    </main>
+      });
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "Professional makeup, Bridal, Self-makeup classes",
+      "provider": {
+        "@type": "Person",
+        "name": "Jacky Brito"
+      },
+      "areaServed": "Mexico City and surroundings",
+      "availableChannel": {
+        "@type": "ServiceChannel",
+        "serviceUrl": "https://jackybrito.github.io/BeautyLab/"
+      }
+    }
+    </script>
+    <!-- Deferred loading of non-critical scripts is already implemented with defer in Bootstrap and AOS -->
 </body>
 </html>
