@@ -793,21 +793,33 @@
     </script>
 
     <!-- Cookie Notice -->
-    <div id="cookie-banner" style="position:fixed;bottom:0;left:0;width:100%;background:#212529;color:#fff;padding:12px 0;z-index:99999;display:none;">
-      <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between">
-        <span>This site uses cookies to improve your experience. See the <a href="privacy-notice.html" class="text-white-50 text-decoration-underline">privacy policy</a>.</span>
-        <button class="btn btn-outline-light btn-sm mt-2 mt-md-0" onclick="acceptCookies()" aria-label="Accept cookies">Accept</button>
+    <div id="cookie-banner" style="position:fixed;bottom:0;left:0;width:100%;background:#212529;color:#fff;padding:16px 0;z-index:99999;display:none;box-shadow:0 -2px 12px rgba(0,0,0,0.18);font-size:1.08rem;">
+      <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between" role="region" aria-label="Cookie notice">
+        <span style="font-size:1.08rem;line-height:1.5;">This site uses cookies to improve your experience. See the <a href="privacy-notice.html" class="text-white-50 text-decoration-underline" tabindex="0">privacy policy</a>.</span>
+        <div class="mt-3 mt-md-0 d-flex gap-2">
+          <button class="btn btn-outline-light btn-sm" onclick="acceptCookies()" aria-label="Accept cookies" id="btn-accept-cookies" style="min-width:90px;">Accept</button>
+          <button class="btn btn-outline-secondary btn-sm" onclick="rejectCookies()" aria-label="Reject cookies" id="btn-reject-cookies" style="min-width:90px;">Reject</button>
+        </div>
       </div>
     </div>
     <script>
-      // Simple cookie notice
+      // Accessible cookie notice with reject option
       function acceptCookies() {
         document.getElementById('cookie-banner').style.display = 'none';
         localStorage.setItem('cookiesAccepted', '1');
+        localStorage.removeItem('cookiesRejected');
+      }
+      function rejectCookies() {
+        document.getElementById('cookie-banner').style.display = 'none';
+        localStorage.setItem('cookiesRejected', '1');
+        localStorage.removeItem('cookiesAccepted');
       }
       window.addEventListener('DOMContentLoaded', function() {
-        if(!localStorage.getItem('cookiesAccepted')) {
+        if(!localStorage.getItem('cookiesAccepted') && !localStorage.getItem('cookiesRejected')) {
           document.getElementById('cookie-banner').style.display = 'block';
+          setTimeout(function(){
+            document.getElementById('btn-accept-cookies').focus();
+          }, 200);
         }
       });
     </script>

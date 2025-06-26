@@ -824,21 +824,34 @@
     </script>
 
     <!-- Aviso de cookies -->
-    <div id="cookie-banner" style="position:fixed;bottom:0;left:0;width:100%;background:#212529;color:#fff;padding:12px 0;z-index:99999;display:none;">
-      <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between">
-        <span>Este sitio utiliza cookies para mejorar tu experiencia. Consulta la <a href="aviso-privacidad.html" class="text-white-50 text-decoration-underline">política de privacidad</a>.</span>
-        <button class="btn btn-outline-light btn-sm mt-2 mt-md-0" onclick="aceptarCookies()" aria-label="Aceptar cookies">Aceptar</button>
+    <div id="cookie-banner" style="position:fixed;bottom:0;left:0;width:100%;background:#212529;color:#fff;padding:16px 0;z-index:99999;display:none;box-shadow:0 -2px 12px rgba(0,0,0,0.18);font-size:1.08rem;">
+      <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between" role="region" aria-label="Aviso de cookies">
+        <span style="font-size:1.08rem;line-height:1.5;">Este sitio utiliza cookies para mejorar tu experiencia. Consulta la <a href="aviso-privacidad.html" class="text-white-50 text-decoration-underline" tabindex="0">política de privacidad</a>.</span>
+        <div class="mt-3 mt-md-0 d-flex gap-2">
+          <button class="btn btn-outline-light btn-sm" onclick="aceptarCookies()" aria-label="Aceptar cookies" id="btn-aceptar-cookies" style="min-width:90px;">Aceptar</button>
+          <button class="btn btn-outline-secondary btn-sm" onclick="rechazarCookies()" aria-label="Rechazar cookies" id="btn-rechazar-cookies" style="min-width:90px;">Rechazar</button>
+        </div>
       </div>
     </div>
     <script>
-      // Aviso de cookies simple
+      // Aviso de cookies accesible con opción de rechazar
       function aceptarCookies() {
         document.getElementById('cookie-banner').style.display = 'none';
         localStorage.setItem('cookiesAceptadas', '1');
+        localStorage.removeItem('cookiesRechazadas');
+      }
+      function rechazarCookies() {
+        document.getElementById('cookie-banner').style.display = 'none';
+        localStorage.setItem('cookiesRechazadas', '1');
+        localStorage.removeItem('cookiesAceptadas');
       }
       window.addEventListener('DOMContentLoaded', function() {
-        if(!localStorage.getItem('cookiesAceptadas')) {
+        if(!localStorage.getItem('cookiesAceptadas') && !localStorage.getItem('cookiesRechazadas')) {
           document.getElementById('cookie-banner').style.display = 'block';
+          // Enfocar el botón aceptar para accesibilidad
+          setTimeout(function(){
+            document.getElementById('btn-aceptar-cookies').focus();
+          }, 200);
         }
       });
     </script>
